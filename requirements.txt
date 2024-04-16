@@ -1,5 +1,0 @@
-Django>=4.0.6
-django-crispy-forms>=2.0 
-crispy-bootstrap5>=0.7
-pandas==2.0.3
-numpy==1.25.0
