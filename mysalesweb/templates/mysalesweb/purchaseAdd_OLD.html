@@ -1,0 +1,475 @@
+{% extends 'mysalesweb/base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="popup">
+  <div class="popupblock">
+    <div data-w-id="5b733752-54ad-4452-8381-320350a515e1" class="exitblock"><img src="{% static 'images/close-2.svg' %}"
+        loading="lazy" width="20" height="20" alt=""></div>
+    <h1 class="heading-title">New Product</h1>
+    <div class="form-block w-form">
+      <form id="email-form-2" name="email-form-2" data-name="Email Form 2" method="get"
+        data-wf-page-id="661443ee503901fa09766ded" data-wf-element-id="5b733752-54ad-4452-8381-320350a515e6">
+        <h1 class="easy-text">Basic</h1>
+        <div id="w-node-_67b29728-9b8e-1bed-e62a-9901261d4ed0-50a515df"
+          class="w-layout-layout quick-stack wf-layout-layout">
+          <div id="w-node-e3736800-b01d-1ed7-8a3b-5443cf475a1d-50a515df" class="w-layout-cell">
+            <div class="from-content">
+              <div class="form-label-text">
+                <div class="label-text">Name</div><input class="text-field w-input" maxlength="256" name="filed-name"
+                  data-name="filed-name" placeholder="Input Name" type="text" id="filed-name" required="">
+              </div>
+            </div>
+          </div>
+          <div id="w-node-_29318439-3b66-55b9-f570-2da70c6dbec7-50a515df" class="w-layout-cell">
+            <div class="from-content">
+              <div class="form-label-text">
+                <div class="label-text">Location</div><input class="text-field w-input" maxlength="256"
+                  name="field-location" data-name="field-location" placeholder="Input Location" type="text"
+                  id="field-location" required="">
+              </div>
+            </div>
+          </div>
+          <div id="w-node-dc8289c8-1618-14ad-0e03-a2b5f7a6b7b8-50a515df" class="w-layout-cell">
+            <div class="from-content">
+              <div class="form-label-text">
+                <div class="label-text">Category</div><input class="text-field w-input" maxlength="256"
+                  name="field-category" data-name="field-category" placeholder="Input Category" type="text"
+                  id="field-category" required="">
+              </div>
+            </div>
+          </div>
+          <div id="w-node-_9675e8ea-78fb-efd3-24a0-8d3fe80ebd46-50a515df" class="w-layout-cell">
+            <div class="from-content">
+              <div class="form-label-text">
+                <div class="label-text">Barcode</div><input class="text-field w-input" maxlength="256"
+                  name="field-barcode" data-name="field-barcode" placeholder="Input Barcode" type="text"
+                  id="field-barcode" required="">
+              </div>
+            </div>
+          </div>
+          <div id="w-node-e27abb57-3956-f40f-3df6-f7f87ce4b1be-50a515df" class="w-layout-cell">
+            <div class="from-content">
+              <div class="form-label-text">
+                <div class="label-text">Code</div><input class="text-field w-input" maxlength="256" name="field-code"
+                  data-name="field-code" placeholder="Input Code" type="text" id="field-code" required="">
+              </div>
+            </div>
+          </div>
+          <div id="w-node-e52ef597-2468-aacb-70f9-78f0942fc223-50a515df" class="w-layout-cell">
+            <div class="from-content">
+              <div class="form-label-text">
+                <div class="label-text">Price</div><input class="text-field w-input" maxlength="256" name="field-price"
+                  data-name="field-price" placeholder="Input Price" type="text" id="field-price" required="">
+              </div>
+            </div>
+          </div>
+          <div id="w-node-_2cb7bb0d-3127-824d-af87-fe1cce7ad4d3-50a515df" class="w-layout-cell">
+            <div class="from-content">
+              <div class="form-label-text">
+                <div class="label-text">Quantity</div><input class="text-field w-input" maxlength="256"
+                  name="field-quantity" data-name="field-quantity" placeholder="Input Quantity" type="text"
+                  id="field-quantity" required="">
+              </div>
+            </div>
+          </div>
+          <div id="w-node-_1f9db967-9a39-41d4-2cbf-b47636a03d74-50a515df" class="w-layout-cell">
+            <div class="from-content">
+              <div class="form-label-text">
+                <div class="label-text">Unit</div><input class="text-field w-input" maxlength="256" name="field-unit"
+                  data-name="field-unit" placeholder="Input Unit" type="text" id="field-unit" required="">
+              </div>
+            </div>
+          </div>
+          <div id="w-node-_24e36ac2-2251-642d-ffe8-4bbfffbbabb6-50a515df" class="w-layout-cell">
+            <div class="from-content">
+              <div class="form-label-text">
+                <div class="label-text">Note</div><input class="text-field w-input" maxlength="256" name="field-note"
+                  data-name="field-note" placeholder="Input Note" type="text" id="field-note" required="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <h1 class="easy-text">Media</h1><img width="32" height="32" alt="" src="images/Vectors-Wrapper_1.svg"
+          loading="lazy" class="vectors-wrapper"><input type="submit" data-wait="Please wait..."
+          class="add-button submit w-button" value="Submit">
+      </form>
+      <div class="w-form-done">
+        <div>Thank you! Your submission has been received!</div>
+      </div>
+      <div class="w-form-fail">
+        <div>Oops! Something went wrong while submitting the form.</div>
+      </div>
+    </div>
+  </div>
+</div>
+<section class="section">
+  <div class="sectionheader">
+    <div class="sectionheadercomponent">
+      <h1 class="heading-title">New Purchase</h1>
+      <form action="/search" class="search saved-shortlists w-form"><input class="search-input w-input" maxlength="256"
+          name="query" placeholder="Search..." type="search" id="search" required=""><input type="submit"
+          class="search-button _2 w-button" value="Search"><img src="{% static 'images/search.svg' %}" alt=""
+          class="search-icon">
+      </form>
+      <a data-w-id="0b85913a-852b-51ac-8093-809083442de5" href="#" class="add-button w-button">Add Product</a>
+    </div>
+    <div class="w-form">
+      <form id="email-form" name="email-form" data-name="Email Form" method="get"
+        data-wf-page-id="661443ee503901fa09766ded" data-wf-element-id="cceccfdf-f45f-4491-5115-c0e845e92a19">
+        <div data-hover="false" data-delay="0" class="w-dropdown">
+          <div class="w-dropdown-toggle">
+            <div class="w-icon-dropdown-toggle"></div>
+            <div>Provider</div>
+          </div>
+          <nav class="w-dropdown-list">
+            <a href="#" class="w-dropdown-link">Link 1</a>
+            <a href="#" class="w-dropdown-link">Link 2</a>
+            <a href="#" class="w-dropdown-link">Link 3</a>
+          </nav>
+        </div>
+        <h1 class="easy-text">Products</h1>
+        <div class="table-wrapper">
+          <div class="table-row head">
+            <div class="table-header"></div>
+            <div class="table-box">
+              <div class="table-heading">Product</div>
+            </div>
+            <div class="table-box">
+              <div class="table-heading">Name</div>
+            </div>
+            <div class="table-box">
+              <div class="table-heading">Price</div>
+            </div>
+            <div class="table-box">
+              <div class="table-heading">Number</div>
+            </div>
+            <div class="table-box _11">
+              <div class="table-heading">Total Price</div>
+            </div>
+            <div class="table-box action">
+              <div class="table-heading">Status</div>
+            </div>
+            <div class="table-box action">
+              <div class="table-heading">Action</div>
+            </div>
+          </div>
+          <div class="table-container">
+            <div class="table-data-wrapper">
+              <div class="scroll-container">
+                <div class="scroll-table-content">
+                  <div class="table-row head hide">
+                    <div class="table-header"></div>
+                    <div class="table-box">
+                      <div class="table-heading">Name</div>
+                    </div>
+                    <div class="table-box">
+                      <div class="table-heading">Email</div>
+                    </div>
+                    <div class="table-box">
+                      <div class="table-heading">Phone</div>
+                    </div>
+                    <div class="table-box">
+                      <div class="table-heading">Country</div>
+                    </div>
+                    <div class="table-box _11">
+                      <div class="table-heading">Last Update</div>
+                    </div>
+                    <div class="table-box action">
+                      <div class="table-heading">Status</div>
+                    </div>
+                    <div class="table-box action">
+                      <div class="table-heading">Action</div>
+                    </div>
+                  </div>
+                  <div class="table-row">
+                    <div class="table-header _2">
+                      <div class="table-row-nr">1</div>
+                    </div>
+                    <div class="table-box _2"><img src="images/daniil-lobachev-5MrFxXKzZ_o-unsplash.jpg" width="32"
+                        sizes="32px"
+                        srcset="{% static 'images/daniil-lobachev-5MrFxXKzZ_o-unsplash-p-500.jpeg' %} 500w, images/daniil-lobachev-5MrFxXKzZ_o-unsplash-p-800.jpeg 800w, images/daniil-lobachev-5MrFxXKzZ_o-unsplash-p-1080.jpeg 1080w, images/daniil-lobachev-5MrFxXKzZ_o-unsplash-p-1600.jpeg 1600w, images/daniil-lobachev-5MrFxXKzZ_o-unsplash-p-2000.jpeg 2000w, images/daniil-lobachev-5MrFxXKzZ_o-unsplash-p-2600.jpeg 2600w, images/daniil-lobachev-5MrFxXKzZ_o-unsplash-p-3200.jpeg 3200w, images/daniil-lobachev-5MrFxXKzZ_o-unsplash.jpg 3346w"
+                        alt="" class="image-7">
+                      <div class="table-data name">Product 1</div>
+                    </div>
+                    <div class="table-box _2">
+                      <a href="#" class="table-data link">wprice@email.com</a>
+                    </div>
+                    <div class="table-box _2">
+                      <div class="table-data">813-200-2741</div>
+                    </div>
+                    <div class="table-box _2">
+                      <div class="table-data">United States</div>
+                    </div>
+                    <div class="table-box _2 small">
+                      <div class="table-data">May 22, 2020</div>
+                    </div>
+                    <div class="table-box _2 action">
+                      <a href="#" data-ix="toggle" data-w-id="4477a2ec-77bd-2a77-4209-a91afbb7a4ef"
+                        class="togglebutton active w-inline-block">
+                        <div class="buttontoggle _2"></div>
+                      </a>
+                    </div>
+                    <div class="table-box _2 action">
+                      <a data-w-id="4477a2ec-77bd-2a77-4209-a91afbb7a4f2" href="#"
+                        class="link-block-12 w-inline-block"><img src="{% static 'images/edit-24px.svg' %}"
+                          data-w-id="4477a2ec-77bd-2a77-4209-a91afbb7a4f3" alt="" class="table-action-icon"></a>
+                      <a data-w-id="4477a2ec-77bd-2a77-4209-a91afbb7a4f4" href="#"
+                        class="link-block-10 w-inline-block"><img src="{% static 'images/close-2.svg' %}" alt=""
+                          class="table-action-icon-2 x"></a>
+                    </div>
+                  </div>
+                  <div class="table-row">
+                    <div class="table-header _2">
+                      <div class="table-row-nr">2</div>
+                    </div>
+                    <div class="table-box _2"><img src="images/daniil-lobachev-5MrFxXKzZ_o-unsplash.jpg" width="32"
+                        sizes="32px"
+                        srcset="images/daniil-lobachev-5MrFxXKzZ_o-unsplash-p-500.jpeg 500w, images/daniil-lobachev-5MrFxXKzZ_o-unsplash-p-800.jpeg 800w, images/daniil-lobachev-5MrFxXKzZ_o-unsplash-p-1080.jpeg 1080w, images/daniil-lobachev-5MrFxXKzZ_o-unsplash-p-1600.jpeg 1600w, images/daniil-lobachev-5MrFxXKzZ_o-unsplash-p-2000.jpeg 2000w, images/daniil-lobachev-5MrFxXKzZ_o-unsplash-p-2600.jpeg 2600w, images/daniil-lobachev-5MrFxXKzZ_o-unsplash-p-3200.jpeg 3200w, images/daniil-lobachev-5MrFxXKzZ_o-unsplash.jpg 3346w"
+                        alt="" class="image-7">
+                      <div class="table-data name">John Smith</div>
+                    </div>
+                    <div class="table-box _2">
+                      <a href="#" class="table-data link">jsmith@email.com</a>
+                    </div>
+                    <div class="table-box _2">
+                      <div class="table-data">813-200-2741</div>
+                    </div>
+                    <div class="table-box _2">
+                      <div class="table-data">United Kingdom</div>
+                    </div>
+                    <div class="table-box _2 small">
+                      <div class="table-data">May 16, 2020</div>
+                    </div>
+                    <div class="table-box _2 action">
+                      <a href="#" data-ix="toggle" data-w-id="4477a2ec-77bd-2a77-4209-a91afbb7a50b"
+                        class="togglebutton active w-inline-block">
+                        <div class="buttontoggle _2"></div>
+                      </a>
+                    </div>
+                    <div class="table-box _2 action">
+                      <a data-w-id="4477a2ec-77bd-2a77-4209-a91afbb7a50e" href="#"
+                        class="link-block-12 w-inline-block"><img src="{% static 'images/edit-24px.svg' %}" alt=""
+                          class="table-action-icon"></a>
+                      <a data-w-id="4477a2ec-77bd-2a77-4209-a91afbb7a510" href="#"
+                        class="link-block-10 w-inline-block"><img src="{% static 'images/close-2.svg' %}" alt=""
+                          class="table-action-icon-2 x"></a>
+                    </div>
+                  </div>
+                  <div class="table-row">
+                    <div class="table-header _2">
+                      <div class="table-row-nr">3</div>
+                    </div>
+                    <div class="table-box _2"><img src="images/daniil-lobachev-5MrFxXKzZ_o-unsplash.jpg" width="32"
+                        sizes="32px"
+                        srcset="images/daniil-lobachev-5MrFxXKzZ_o-unsplash-p-500.jpeg 500w, images/daniil-lobachev-5MrFxXKzZ_o-unsplash-p-800.jpeg 800w, images/daniil-lobachev-5MrFxXKzZ_o-unsplash-p-1080.jpeg 1080w, images/daniil-lobachev-5MrFxXKzZ_o-unsplash-p-1600.jpeg 1600w, images/daniil-lobachev-5MrFxXKzZ_o-unsplash-p-2000.jpeg 2000w, images/daniil-lobachev-5MrFxXKzZ_o-unsplash-p-2600.jpeg 2600w, images/daniil-lobachev-5MrFxXKzZ_o-unsplash-p-3200.jpeg 3200w, images/daniil-lobachev-5MrFxXKzZ_o-unsplash.jpg 3346w"
+                        alt="" class="image-7">
+                      <div class="table-data name">Bianca Rossi</div>
+                    </div>
+                    <div class="table-box _2">
+                      <a href="#" class="table-data link">brossi@email.com</a>
+                    </div>
+                    <div class="table-box _2">
+                      <div class="table-data">813-200-2741</div>
+                    </div>
+                    <div class="table-box _2">
+                      <div class="table-data">Italy</div>
+                    </div>
+                    <div class="table-box _2 small">
+                      <div class="table-data">May 04, 2020</div>
+                    </div>
+                    <div class="table-box _2 action">
+                      <a href="#" data-ix="toggle" data-w-id="4477a2ec-77bd-2a77-4209-a91afbb7a527"
+                        class="togglebutton w-inline-block">
+                        <div class="buttontoggle"></div>
+                      </a>
+                    </div>
+                    <div class="table-box _2 action">
+                      <a data-w-id="4477a2ec-77bd-2a77-4209-a91afbb7a52a" href="#"
+                        class="link-block-12 w-inline-block"><img src="{% static 'images/edit-24px.svg' %}" alt=""
+                          class="table-action-icon"></a>
+                      <a data-w-id="4477a2ec-77bd-2a77-4209-a91afbb7a52c" href="#"
+                        class="link-block-10 w-inline-block"><img src="{% static 'images/close-2.svg' %}" alt=""
+                          class="table-action-icon-2 x"></a>
+                    </div>
+                  </div>
+                  <div class="table-row">
+                    <div class="table-header _2">
+                      <div class="table-row-nr">4</div>
+                    </div>
+                    <div class="table-box _2"><img src="images/daniil-lobachev-5MrFxXKzZ_o-unsplash.jpg" width="32"
+                        sizes="32px"
+                        srcset="images/daniil-lobachev-5MrFxXKzZ_o-unsplash-p-500.jpeg 500w, images/daniil-lobachev-5MrFxXKzZ_o-unsplash-p-800.jpeg 800w, images/daniil-lobachev-5MrFxXKzZ_o-unsplash-p-1080.jpeg 1080w, images/daniil-lobachev-5MrFxXKzZ_o-unsplash-p-1600.jpeg 1600w, images/daniil-lobachev-5MrFxXKzZ_o-unsplash-p-2000.jpeg 2000w, images/daniil-lobachev-5MrFxXKzZ_o-unsplash-p-2600.jpeg 2600w, images/daniil-lobachev-5MrFxXKzZ_o-unsplash-p-3200.jpeg 3200w, images/daniil-lobachev-5MrFxXKzZ_o-unsplash.jpg 3346w"
+                        alt="" class="image-7">
+                      <div class="table-data name">Marie Brown</div>
+                    </div>
+                    <div class="table-box _2">
+                      <a href="#" class="table-data link">mbrown@email.com</a>
+                    </div>
+                    <div class="table-box _2">
+                      <div class="table-data">813-200-2741</div>
+                    </div>
+                    <div class="table-box _2">
+                      <div class="table-data">United States</div>
+                    </div>
+                    <div class="table-box _2 small">
+                      <div class="table-data">Apr 22, 2020</div>
+                    </div>
+                    <div class="table-box _2 action">
+                      <a href="#" data-ix="toggle" data-w-id="4477a2ec-77bd-2a77-4209-a91afbb7a543"
+                        class="togglebutton active w-inline-block">
+                        <div class="buttontoggle _2"></div>
+                      </a>
+                    </div>
+                    <div class="table-box _2 action">
+                      <a data-w-id="4477a2ec-77bd-2a77-4209-a91afbb7a546" href="#"
+                        class="link-block-12 w-inline-block"><img src="{% static 'images/edit-24px.svg' %}" alt=""
+                          class="table-action-icon"></a>
+                      <a data-w-id="4477a2ec-77bd-2a77-4209-a91afbb7a548" href="#"
+                        class="link-block-10 w-inline-block"><img src="{% static 'images/close-2.svg' %}" alt=""
+                          class="table-action-icon-2 x"></a>
+                    </div>
+                  </div>
+                  <div class="table-row">
+                    <div class="table-header _2">
+                      <div class="table-row-nr">5</div>
+                    </div>
+                    <div class="table-box _2"><img src="images/daniil-lobachev-5MrFxXKzZ_o-unsplash.jpg" width="32"
+                        sizes="32px"
+                        srcset="images/daniil-lobachev-5MrFxXKzZ_o-unsplash-p-500.jpeg 500w, images/daniil-lobachev-5MrFxXKzZ_o-unsplash-p-800.jpeg 800w, images/daniil-lobachev-5MrFxXKzZ_o-unsplash-p-1080.jpeg 1080w, images/daniil-lobachev-5MrFxXKzZ_o-unsplash-p-1600.jpeg 1600w, images/daniil-lobachev-5MrFxXKzZ_o-unsplash-p-2000.jpeg 2000w, images/daniil-lobachev-5MrFxXKzZ_o-unsplash-p-2600.jpeg 2600w, images/daniil-lobachev-5MrFxXKzZ_o-unsplash-p-3200.jpeg 3200w, images/daniil-lobachev-5MrFxXKzZ_o-unsplash.jpg 3346w"
+                        alt="" class="image-7">
+                      <div class="table-data name">Kerstin Schmidt</div>
+                    </div>
+                    <div class="table-box _2">
+                      <a href="#" class="table-data link">kschmidt@email.com</a>
+                    </div>
+                    <div class="table-box _2">
+                      <div class="table-data">813-200-2741</div>
+                    </div>
+                    <div class="table-box _2">
+                      <div class="table-data">Germany</div>
+                    </div>
+                    <div class="table-box _2 small">
+                      <div class="table-data">Apr 18, 2020</div>
+                    </div>
+                    <div class="table-box _2 action">
+                      <a href="#" data-ix="toggle" data-w-id="4477a2ec-77bd-2a77-4209-a91afbb7a55f"
+                        class="togglebutton w-inline-block">
+                        <div class="buttontoggle"></div>
+                      </a>
+                    </div>
+                    <div class="table-box _2 action">
+                      <a data-w-id="4477a2ec-77bd-2a77-4209-a91afbb7a562" href="#"
+                        class="link-block-12 w-inline-block"><img src="{% static 'images/edit-24px.svg' %}" alt=""
+                          class="table-action-icon"></a>
+                      <a data-w-id="4477a2ec-77bd-2a77-4209-a91afbb7a564" href="#"
+                        class="link-block-10 w-inline-block"><img src="{% static 'images/close-2.svg' %}" alt=""
+                          class="table-action-icon-2 x"></a>
+                    </div>
+                  </div>
+                  <div class="table-row">
+                    <div class="table-header _2">
+                      <div class="table-row-nr">6</div>
+                    </div>
+                    <div class="table-box _2"><img src="images/daniil-lobachev-5MrFxXKzZ_o-unsplash.jpg" width="32"
+                        sizes="32px"
+                        srcset="images/daniil-lobachev-5MrFxXKzZ_o-unsplash-p-500.jpeg 500w, images/daniil-lobachev-5MrFxXKzZ_o-unsplash-p-800.jpeg 800w, images/daniil-lobachev-5MrFxXKzZ_o-unsplash-p-1080.jpeg 1080w, images/daniil-lobachev-5MrFxXKzZ_o-unsplash-p-1600.jpeg 1600w, images/daniil-lobachev-5MrFxXKzZ_o-unsplash-p-2000.jpeg 2000w, images/daniil-lobachev-5MrFxXKzZ_o-unsplash-p-2600.jpeg 2600w, images/daniil-lobachev-5MrFxXKzZ_o-unsplash-p-3200.jpeg 3200w, images/daniil-lobachev-5MrFxXKzZ_o-unsplash.jpg 3346w"
+                        alt="" class="image-7">
+                      <div class="table-data name">Teresa Blanco</div>
+                    </div>
+                    <div class="table-box _2">
+                      <a href="#" class="table-data link">tblanco@email.com</a>
+                    </div>
+                    <div class="table-box _2">
+                      <div class="table-data">813-200-2741</div>
+                    </div>
+                    <div class="table-box _2">
+                      <div class="table-data">Spain</div>
+                    </div>
+                    <div class="table-box _2 small">
+                      <div class="table-data">Apr 10, 2020</div>
+                    </div>
+                    <div class="table-box _2 action">
+                      <a href="#" data-ix="toggle" data-w-id="4477a2ec-77bd-2a77-4209-a91afbb7a57b"
+                        class="togglebutton w-inline-block">
+                        <div class="buttontoggle"></div>
+                      </a>
+                    </div>
+                    <div class="table-box _2 action">
+                      <a data-w-id="4477a2ec-77bd-2a77-4209-a91afbb7a57e" href="#"
+                        class="link-block-12 w-inline-block"><img src="{% static 'images/edit-24px.svg' %}" alt=""
+                          class="table-action-icon"></a>
+                      <a data-w-id="4477a2ec-77bd-2a77-4209-a91afbb7a580" href="#"
+                        class="link-block-10 w-inline-block"><img src="{% static 'images/close-2.svg' %}" alt=""
+                          class="table-action-icon-2 x"></a>
+                    </div>
+                  </div>
+                  <div class="table-row">
+                    <div class="table-header _2">
+                      <div class="table-row-nr">7</div>
+                    </div>
+                    <div class="table-box _2"><img src="images/daniil-lobachev-5MrFxXKzZ_o-unsplash.jpg" width="32"
+                        sizes="32px"
+                        srcset="images/daniil-lobachev-5MrFxXKzZ_o-unsplash-p-500.jpeg 500w, images/daniil-lobachev-5MrFxXKzZ_o-unsplash-p-800.jpeg 800w, images/daniil-lobachev-5MrFxXKzZ_o-unsplash-p-1080.jpeg 1080w, images/daniil-lobachev-5MrFxXKzZ_o-unsplash-p-1600.jpeg 1600w, images/daniil-lobachev-5MrFxXKzZ_o-unsplash-p-2000.jpeg 2000w, images/daniil-lobachev-5MrFxXKzZ_o-unsplash-p-2600.jpeg 2600w, images/daniil-lobachev-5MrFxXKzZ_o-unsplash-p-3200.jpeg 3200w, images/daniil-lobachev-5MrFxXKzZ_o-unsplash.jpg 3346w"
+                        alt="" class="image-7">
+                      <div class="table-data name">Justine Chirac</div>
+                    </div>
+                    <div class="table-box _2">
+                      <a href="#" class="table-data link">jchirac@email.com</a>
+                    </div>
+                    <div class="table-box _2">
+                      <div class="table-data">813-200-2741</div>
+                    </div>
+                    <div class="table-box _2">
+                      <div class="table-data">Fance</div>
+                    </div>
+                    <div class="table-box _2 small">
+                      <div class="table-data">Apr 02, 2020</div>
+                    </div>
+                    <div class="table-box _2 action">
+                      <a href="#" data-ix="toggle" data-w-id="4477a2ec-77bd-2a77-4209-a91afbb7a597"
+                        class="togglebutton active w-inline-block">
+                        <div class="buttontoggle _2"></div>
+                      </a>
+                    </div>
+                    <div class="table-box _2 action">
+                      <a data-w-id="4477a2ec-77bd-2a77-4209-a91afbb7a59a" href="#"
+                        class="link-block-12 w-inline-block"><img src="{% static 'images/edit-24px.svg' %}" alt=""
+                          class="table-action-icon"></a>
+                      <a data-w-id="4477a2ec-77bd-2a77-4209-a91afbb7a59c" href="#"
+                        class="link-block-10 w-inline-block"><img src="{% static 'images/close-2.svg' %}" alt=""
+                          class="table-action-icon-2 x"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><input type="submit" data-wait="Please wait..." class="add-button w-button" value="Submit">
+      </form>
+      <div class="w-form-done">
+        <div>Thank you! Your submission has been received!</div>
+      </div>
+      <div class="w-form-fail">
+        <div>Oops! Something went wrong while submitting the form.</div>
+      </div>
+    </div>
+  </div>
+  <button onclick="myPopup.show()">Show Popup</button>
+  <button onclick="showPopup()">Open Popup</button>
+  <button onclick="closePopup()">Close Popup</button>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const myPopup = new Popup({
+        id: "my-popup",
+        title: "Welcome!",
+        content: "This is an example of a simple popup.",
+        backgroundColor: "#bff7ff", // Optional: Set a custom background color.
+        showImmediately: true // Automatically show the popup when the page loads.
+      });
+    });
+  </script>
+</section>
+
+{% endblock %}
