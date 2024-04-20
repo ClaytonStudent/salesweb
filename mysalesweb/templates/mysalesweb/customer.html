@@ -1,6 +1,6 @@
 {% load static %}
 <!DOCTYPE html><!--  This site was created in Webflow. https://www.webflow.com  -->
-<!--  Last Published: Fri Apr 12 2024 00:05:16 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Sat Apr 20 2024 11:23:45 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="660e9fea0f78555e24e7e6c7" data-wf-site="66042299f8679b3f134eaa55">
 
 <head>
@@ -24,7 +24,7 @@
     data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="header-wrapper w-nav">
     <div class="container-default w-container">
       <div class="header-content-wrapper">
-        <a href="{% url 'index' %}" class="header-logo-link w-nav-brand"><img
+        <a href="{% url 'index' %}" aria-current="page" class="header-logo-link w-nav-brand w--current"><img
             src="https://uploads-ssl.webflow.com/63d309d5831cc7bd8997129f/63d309d5831cc7230a9712f9_placeholder-logo-webflow-template-brix-templates.svg"
             alt="" class="header-logo"></a>
         <div class="header-right-side">
@@ -46,13 +46,12 @@
                   <nav class="dropdown-column-wrapper w-dropdown-list">
                     <div class="dropdown-pd">
                       <div class="w-layout-grid grid-1-column dropdown-link-column">
-                        <a href="#" class="dropdown-link w-dropdown-link">Mobile app</a>
-                        <a href="#" class="dropdown-link w-dropdown-link">Desktop app</a>
-                        <a href="#" class="dropdown-link w-dropdown-link">Multiple users</a>
-                        <a href="#" class="dropdown-link w-dropdown-link">Integrations</a>
-                        <a href="#" class="dropdown-link w-dropdown-link">Monthly reports</a>
-                        <a href="#" class="dropdown-link w-dropdown-link">Granular
-                          permissions</a>
+                        <a href="#" class="dropdown-link w-dropdown-link">Order List</a>
+                        <a href="#" class="dropdown-link w-dropdown-link">Order Analysis</a>
+                        <a href="#" class="dropdown-link w-dropdown-link">Order Test</a>
+                        <a href="#" class="dropdown-link w-dropdown-link">Order Test </a>
+                        <a href="#" class="dropdown-link w-dropdown-link">Order Test</a>
+                        <a href="#" class="dropdown-link w-dropdown-link">Order Test</a>
                       </div>
                     </div>
                   </nav>
@@ -62,7 +61,7 @@
                 <a href="{% url 'purchase' %}" class="header-nav-link w-nav-link">Purchase</a>
               </li>
               <li class="header-nav-list-item">
-                <a href="{% url 'customer' %}" class="header-nav-link w-nav-link">Customer</a>
+                <a href="{% url 'customer' %}" target="_blank" class="header-nav-link w-nav-link">Customer</a>
               </li>
               <li class="header-nav-list-item">
                 <a href="#" class="btn-secondary small w-button">Login</a>
@@ -76,7 +75,6 @@
             <div class="hamburger-menu-bar top"></div>
             <div class="hamburger-menu-bar bottom"></div>
           </div>
-          <a href="#" class="btn-primary small header-btn-hidde-on-mb w-button">Get started</a>
         </div>
       </div>
     </div>
@@ -87,9 +85,9 @@
         <h1 class="heading-title">Customer</h1>
         <form action="/search" class="search saved-shortlists w-form"><input class="search-input w-input"
             maxlength="256" name="query" placeholder="Search..." type="search" id="search" required=""><input
-            type="submit" class="search-button _2 w-button" value="Search"><img src="images/search.svg" alt=""
-            class="search-icon"></form>
-        <a href="https://webflow.com/website/table-template-81d32b" target="_blank" class="add-button w-button">Add</a>
+            type="submit" class="search-button _2 w-button" value="Search"><img src="{% static 'images/search.svg' %}"
+            alt="" class="search-icon"></form>
+        <a href="#" target="_blank" class="add-button w-button">Add</a>
       </div>
     </div>
     <div class="table-wrapper">
@@ -121,13 +119,14 @@
         <div class="table-data-wrapper">
           <div class="scroll-container">
             <div class="scroll-table-content">
+
               <div class="table-row">
                 <div class="table-header _2">
                   <div class="table-row-nr">1</div>
                 </div>
                 <div class="table-box _2"><img
-                    src="images/5dd1ca04edfe6a591970a2cd_face-chad_15dd1ca04edfe6a591970a2cd_face-chad.jpg" width="32"
-                    alt="" class="image-7">
+                    src="{% static 'images/5dd1ca04edfe6a591970a2cd_face-chad_15dd1ca04edfe6a591970a2cd_face-chad.jpg' %}"
+                    width="32" alt="" class="image-7">
                   <div class="table-data name">Walter A. Price</div>
                 </div>
                 <div class="table-box _2">
@@ -143,25 +142,25 @@
                   <div class="table-data">May 22, 2020</div>
                 </div>
                 <div class="table-box _2 action">
-                  <a href="#" data-ix="toggle" data-w-id="34805223-350c-4abb-8d1a-f344e5d807b6"
+                  <a href="#" data-ix="toggle" data-w-id="050f8d5a-0610-3b6a-fc80-7514a44a40c6"
                     class="togglebutton active w-inline-block">
                     <div class="buttontoggle _2"></div>
                   </a>
                 </div>
                 <div class="table-box _2 action">
-                  <a data-w-id="34805223-350c-4abb-8d1a-f344e5d807b9" href="#" class="link-block-12 w-inline-block"><img
-                      src="images/edit-24px.svg" alt="" class="table-action-icon"></a>
-                  <a data-w-id="34805223-350c-4abb-8d1a-f344e5d807bb" href="#" class="link-block-10 w-inline-block"><img
-                      src="images/close-2.svg" alt="" class="table-action-icon-2 x"></a>
+                  <a data-w-id="050f8d5a-0610-3b6a-fc80-7514a44a40c9" href="#" class="link-block-12 w-inline-block"><img
+                      src="{% static 'images/edit-24px.svg' %}" alt="" class="table-action-icon"></a>
+                  <a data-w-id="050f8d5a-0610-3b6a-fc80-7514a44a40cb" href="#" class="link-block-10 w-inline-block"><img
+                      src="{% static 'images/close-2.svg' %}" alt="" class="table-action-icon-2 x"></a>
                 </div>
               </div>
               <div class="table-row">
                 <div class="table-header _2">
                   <div class="table-row-nr">2</div>
                 </div>
-                <div class="table-box _2"><img src="images/photo-1535162777965-1304efc8c6dc.jpeg" width="32"
-                    sizes="32px"
-                    srcset="images/photo-1535162777965-1304efc8c6dc-p-500.jpeg 500w, images/photo-1535162777965-1304efc8c6dc.jpeg 800w"
+                <div class="table-box _2"><img src="{% static 'images/photo-1535162777965-1304efc8c6dc.jpeg' %}"
+                    width="32" sizes="31.99652862548828px"
+                    srcset="{% static 'images/photo-1535162777965-1304efc8c6dc-p-500.jpeg' %} 500w, {% static 'images/photo-1535162777965-1304efc8c6dc.jpeg' %} 800w"
                     alt="" class="image-7">
                   <div class="table-data name">John Smith</div>
                 </div>
@@ -178,25 +177,25 @@
                   <div class="table-data">May 16, 2020</div>
                 </div>
                 <div class="table-box _2 action">
-                  <a href="#" data-ix="toggle" data-w-id="34805223-350c-4abb-8d1a-f344e5d807d2"
+                  <a href="#" data-ix="toggle" data-w-id="050f8d5a-0610-3b6a-fc80-7514a44a40e2"
                     class="togglebutton active w-inline-block">
                     <div class="buttontoggle _2"></div>
                   </a>
                 </div>
                 <div class="table-box _2 action">
-                  <a data-w-id="34805223-350c-4abb-8d1a-f344e5d807d5" href="#" class="link-block-12 w-inline-block"><img
-                      src="images/edit-24px.svg" alt="" class="table-action-icon"></a>
-                  <a data-w-id="34805223-350c-4abb-8d1a-f344e5d807d7" href="#" class="link-block-10 w-inline-block"><img
-                      src="images/close-2.svg" alt="" class="table-action-icon-2 x"></a>
+                  <a data-w-id="050f8d5a-0610-3b6a-fc80-7514a44a40e5" href="#" class="link-block-12 w-inline-block"><img
+                      src="{% static 'images/edit-24px.svg' %}" alt="" class="table-action-icon"></a>
+                  <a data-w-id="050f8d5a-0610-3b6a-fc80-7514a44a40e7" href="#" class="link-block-10 w-inline-block"><img
+                      src="{% static 'images/close-2.svg' %}" alt="" class="table-action-icon-2 x"></a>
                 </div>
               </div>
               <div class="table-row">
                 <div class="table-header _2">
                   <div class="table-row-nr">3</div>
                 </div>
-                <div class="table-box _2"><img src="images/daniil-lobachev-XAo09LtQiAQ-unsplash.jpg" width="32"
-                    sizes="32px"
-                    srcset="images/daniil-lobachev-XAo09LtQiAQ-unsplash-p-500.jpeg 500w, images/daniil-lobachev-XAo09LtQiAQ-unsplash-p-800.jpeg 800w, images/daniil-lobachev-XAo09LtQiAQ-unsplash-p-1080.jpeg 1080w, images/daniil-lobachev-XAo09LtQiAQ-unsplash-p-1600.jpeg 1600w, images/daniil-lobachev-XAo09LtQiAQ-unsplash-p-2000.jpeg 2000w, images/daniil-lobachev-XAo09LtQiAQ-unsplash-p-2600.jpeg 2600w, images/daniil-lobachev-XAo09LtQiAQ-unsplash-p-3200.jpeg 3200w, images/daniil-lobachev-XAo09LtQiAQ-unsplash.jpg 4016w"
+                <div class="table-box _2"><img src="{% static 'images/daniil-lobachev-XAo09LtQiAQ-unsplash.jpg' %}"
+                    width="32" sizes="31.99652862548828px"
+                    srcset="{% static 'images/daniil-lobachev-XAo09LtQiAQ-unsplash-p-500.jpeg' %} 500w, {% static 'images/daniil-lobachev-XAo09LtQiAQ-unsplash-p-800.jpeg' %} 800w, {% static 'images/daniil-lobachev-XAo09LtQiAQ-unsplash-p-1080.jpeg' %} 1080w, {% static 'images/daniil-lobachev-XAo09LtQiAQ-unsplash-p-1600.jpeg' %} 1600w, {% static 'images/daniil-lobachev-XAo09LtQiAQ-unsplash-p-2000.jpeg' %} 2000w, {% static 'images/daniil-lobachev-XAo09LtQiAQ-unsplash-p-2600.jpeg' %} 2600w, {% static 'images/daniil-lobachev-XAo09LtQiAQ-unsplash-p-3200.jpeg' %} 3200w, {% static 'images/daniil-lobachev-XAo09LtQiAQ-unsplash.jpg' %} 4016w"
                     alt="" class="image-7">
                   <div class="table-data name">Bianca Rossi</div>
                 </div>
@@ -213,24 +212,25 @@
                   <div class="table-data">May 04, 2020</div>
                 </div>
                 <div class="table-box _2 action">
-                  <a href="#" data-ix="toggle" data-w-id="34805223-350c-4abb-8d1a-f344e5d807ee"
+                  <a href="#" data-ix="toggle" data-w-id="050f8d5a-0610-3b6a-fc80-7514a44a40fe"
                     class="togglebutton w-inline-block">
                     <div class="buttontoggle"></div>
                   </a>
                 </div>
                 <div class="table-box _2 action">
-                  <a data-w-id="34805223-350c-4abb-8d1a-f344e5d807f1" href="#" class="link-block-12 w-inline-block"><img
-                      src="images/edit-24px.svg" alt="" class="table-action-icon"></a>
-                  <a data-w-id="34805223-350c-4abb-8d1a-f344e5d807f3" href="#" class="link-block-10 w-inline-block"><img
-                      src="images/close-2.svg" alt="" class="table-action-icon-2 x"></a>
+                  <a data-w-id="050f8d5a-0610-3b6a-fc80-7514a44a4101" href="#" class="link-block-12 w-inline-block"><img
+                      src="{% static 'images/edit-24px.svg' %}" alt="" class="table-action-icon"></a>
+                  <a data-w-id="050f8d5a-0610-3b6a-fc80-7514a44a4103" href="#" class="link-block-10 w-inline-block"><img
+                      src="{% static 'images/close-2.svg' %}" alt="" class="table-action-icon-2 x"></a>
                 </div>
               </div>
               <div class="table-row">
                 <div class="table-header _2">
                   <div class="table-row-nr">4</div>
                 </div>
-                <div class="table-box _2"><img src="images/joao-ritter-a_C5xYx7Pkw-unsplash.jpg" width="32" sizes="32px"
-                    srcset="images/joao-ritter-a_C5xYx7Pkw-unsplash-p-500.jpeg 500w, images/joao-ritter-a_C5xYx7Pkw-unsplash-p-800.jpeg 800w, images/joao-ritter-a_C5xYx7Pkw-unsplash-p-1080.jpeg 1080w, images/joao-ritter-a_C5xYx7Pkw-unsplash-p-1600.jpeg 1600w, images/joao-ritter-a_C5xYx7Pkw-unsplash-p-2000.jpeg 2000w, images/joao-ritter-a_C5xYx7Pkw-unsplash-p-2600.jpeg 2600w, images/joao-ritter-a_C5xYx7Pkw-unsplash.jpg 3072w"
+                <div class="table-box _2"><img src="{% static 'images/joao-ritter-a_C5xYx7Pkw-unsplash.jpg' %}"
+                    width="32" sizes="31.99652862548828px"
+                    srcset="{% static 'images/joao-ritter-a_C5xYx7Pkw-unsplash-p-500.jpeg' %} 500w, {% static 'images/joao-ritter-a_C5xYx7Pkw-unsplash-p-800.jpeg' %} 800w, {% static 'images/joao-ritter-a_C5xYx7Pkw-unsplash-p-1080.jpeg' %} 1080w, {% static 'images/joao-ritter-a_C5xYx7Pkw-unsplash-p-1600.jpeg' %} 1600w, {% static 'images/joao-ritter-a_C5xYx7Pkw-unsplash-p-2000.jpeg' %} 2000w, {% static 'images/joao-ritter-a_C5xYx7Pkw-unsplash-p-2600.jpeg' %} 2600w, {% static 'images/joao-ritter-a_C5xYx7Pkw-unsplash.jpg' %} 3072w"
                     alt="" class="image-7">
                   <div class="table-data name">Marie Brown</div>
                 </div>
@@ -247,25 +247,25 @@
                   <div class="table-data">Apr 22, 2020</div>
                 </div>
                 <div class="table-box _2 action">
-                  <a href="#" data-ix="toggle" data-w-id="34805223-350c-4abb-8d1a-f344e5d8080a"
+                  <a href="#" data-ix="toggle" data-w-id="050f8d5a-0610-3b6a-fc80-7514a44a411a"
                     class="togglebutton active w-inline-block">
                     <div class="buttontoggle _2"></div>
                   </a>
                 </div>
                 <div class="table-box _2 action">
-                  <a data-w-id="34805223-350c-4abb-8d1a-f344e5d8080d" href="#" class="link-block-12 w-inline-block"><img
-                      src="images/edit-24px.svg" alt="" class="table-action-icon"></a>
-                  <a data-w-id="34805223-350c-4abb-8d1a-f344e5d8080f" href="#" class="link-block-10 w-inline-block"><img
-                      src="images/close-2.svg" alt="" class="table-action-icon-2 x"></a>
+                  <a data-w-id="050f8d5a-0610-3b6a-fc80-7514a44a411d" href="#" class="link-block-12 w-inline-block"><img
+                      src="{% static 'images/edit-24px.svg' %}" alt="" class="table-action-icon"></a>
+                  <a data-w-id="050f8d5a-0610-3b6a-fc80-7514a44a411f" href="#" class="link-block-10 w-inline-block"><img
+                      src="{% static 'images/close-2.svg' %}" alt="" class="table-action-icon-2 x"></a>
                 </div>
               </div>
               <div class="table-row">
                 <div class="table-header _2">
                   <div class="table-row-nr">5</div>
                 </div>
-                <div class="table-box _2"><img src="images/daniil-lobachev-D41bRxx-a48-unsplash.jpg" width="32"
-                    sizes="32px"
-                    srcset="images/daniil-lobachev-D41bRxx-a48-unsplash-p-500.jpeg 500w, images/daniil-lobachev-D41bRxx-a48-unsplash-p-800.jpeg 800w, images/daniil-lobachev-D41bRxx-a48-unsplash-p-1080.jpeg 1080w, images/daniil-lobachev-D41bRxx-a48-unsplash-p-1600.jpeg 1600w, images/daniil-lobachev-D41bRxx-a48-unsplash-p-2000.jpeg 2000w, images/daniil-lobachev-D41bRxx-a48-unsplash-p-2600.jpeg 2600w, images/daniil-lobachev-D41bRxx-a48-unsplash-p-3200.jpeg 3200w, images/daniil-lobachev-D41bRxx-a48-unsplash.jpg 3384w"
+                <div class="table-box _2"><img src="{% static 'images/daniil-lobachev-D41bRxx-a48-unsplash.jpg' %}"
+                    width="32" sizes="31.99652862548828px"
+                    srcset="{% static 'images/daniil-lobachev-D41bRxx-a48-unsplash-p-500.jpeg' %} 500w, {% static 'images/daniil-lobachev-D41bRxx-a48-unsplash-p-800.jpeg' %} 800w, {% static 'images/daniil-lobachev-D41bRxx-a48-unsplash-p-1080.jpeg' %} 1080w, {% static 'images/daniil-lobachev-D41bRxx-a48-unsplash-p-1600.jpeg' %} 1600w, {% static 'images/daniil-lobachev-D41bRxx-a48-unsplash-p-2000.jpeg' %} 2000w, {% static 'images/daniil-lobachev-D41bRxx-a48-unsplash-p-2600.jpeg' %} 2600w, {% static 'images/daniil-lobachev-D41bRxx-a48-unsplash-p-3200.jpeg' %} 3200w, {% static 'images/daniil-lobachev-D41bRxx-a48-unsplash.jpg' %} 3384w"
                     alt="" class="image-7">
                   <div class="table-data name">Kerstin Schmidt</div>
                 </div>
@@ -282,25 +282,26 @@
                   <div class="table-data">Apr 18, 2020</div>
                 </div>
                 <div class="table-box _2 action">
-                  <a href="#" data-ix="toggle" data-w-id="34805223-350c-4abb-8d1a-f344e5d80826"
+                  <a href="#" data-ix="toggle" data-w-id="050f8d5a-0610-3b6a-fc80-7514a44a4136"
                     class="togglebutton w-inline-block">
                     <div class="buttontoggle"></div>
                   </a>
                 </div>
                 <div class="table-box _2 action">
-                  <a data-w-id="34805223-350c-4abb-8d1a-f344e5d80829" href="#" class="link-block-12 w-inline-block"><img
-                      src="images/edit-24px.svg" alt="" class="table-action-icon"></a>
-                  <a data-w-id="34805223-350c-4abb-8d1a-f344e5d8082b" href="#" class="link-block-10 w-inline-block"><img
-                      src="images/close-2.svg" alt="" class="table-action-icon-2 x"></a>
+                  <a data-w-id="050f8d5a-0610-3b6a-fc80-7514a44a4139" href="#" class="link-block-12 w-inline-block"><img
+                      src="{% static 'images/edit-24px.svg' %}" alt="" class="table-action-icon"></a>
+                  <a data-w-id="050f8d5a-0610-3b6a-fc80-7514a44a413b" href="#" class="link-block-10 w-inline-block"><img
+                      src="{% static 'images/close-2.svg' %}" alt="" class="table-action-icon-2 x"></a>
                 </div>
               </div>
               <div class="table-row">
                 <div class="table-header _2">
                   <div class="table-row-nr">6</div>
                 </div>
-                <div class="table-box _2"><img src="images/inlytics-io-linkedin-analytics-PgMOA6URY1E-unsplash.jpg"
-                    width="32" sizes="32px"
-                    srcset="images/inlytics-io-linkedin-analytics-PgMOA6URY1E-unsplash-p-500.jpeg 500w, images/inlytics-io-linkedin-analytics-PgMOA6URY1E-unsplash-p-800.jpeg 800w, images/inlytics-io-linkedin-analytics-PgMOA6URY1E-unsplash-p-1080.jpeg 1080w, images/inlytics-io-linkedin-analytics-PgMOA6URY1E-unsplash-p-1600.jpeg 1600w, images/inlytics-io-linkedin-analytics-PgMOA6URY1E-unsplash-p-2000.jpeg 2000w, images/inlytics-io-linkedin-analytics-PgMOA6URY1E-unsplash-p-2600.jpeg 2600w, images/inlytics-io-linkedin-analytics-PgMOA6URY1E-unsplash-p-3200.jpeg 3200w, images/inlytics-io-linkedin-analytics-PgMOA6URY1E-unsplash.jpg 4096w"
+                <div class="table-box _2"><img
+                    src="{% static 'images/inlytics-io-linkedin-analytics-PgMOA6URY1E-unsplash.jpg' %}" width="32"
+                    sizes="31.99652862548828px"
+                    srcset="{% static 'images/inlytics-io-linkedin-analytics-PgMOA6URY1E-unsplash-p-500.jpeg' %} 500w, {% static 'images/inlytics-io-linkedin-analytics-PgMOA6URY1E-unsplash-p-800.jpeg' %} 800w, {% static 'images/inlytics-io-linkedin-analytics-PgMOA6URY1E-unsplash-p-1080.jpeg' %} 1080w, {% static 'images/inlytics-io-linkedin-analytics-PgMOA6URY1E-unsplash-p-1600.jpeg' %} 1600w, {% static 'images/inlytics-io-linkedin-analytics-PgMOA6URY1E-unsplash-p-2000.jpeg' %} 2000w, {% static 'images/inlytics-io-linkedin-analytics-PgMOA6URY1E-unsplash-p-2600.jpeg' %} 2600w, {% static 'images/inlytics-io-linkedin-analytics-PgMOA6URY1E-unsplash-p-3200.jpeg' %} 3200w, {% static 'images/inlytics-io-linkedin-analytics-PgMOA6URY1E-unsplash.jpg' %} 4096w"
                     alt="" class="image-7">
                   <div class="table-data name">Teresa Blanco</div>
                 </div>
@@ -317,25 +318,25 @@
                   <div class="table-data">Apr 10, 2020</div>
                 </div>
                 <div class="table-box _2 action">
-                  <a href="#" data-ix="toggle" data-w-id="34805223-350c-4abb-8d1a-f344e5d80842"
+                  <a href="#" data-ix="toggle" data-w-id="050f8d5a-0610-3b6a-fc80-7514a44a4152"
                     class="togglebutton w-inline-block">
                     <div class="buttontoggle"></div>
                   </a>
                 </div>
                 <div class="table-box _2 action">
-                  <a data-w-id="34805223-350c-4abb-8d1a-f344e5d80845" href="#" class="link-block-12 w-inline-block"><img
-                      src="images/edit-24px.svg" alt="" class="table-action-icon"></a>
-                  <a data-w-id="34805223-350c-4abb-8d1a-f344e5d80847" href="#" class="link-block-10 w-inline-block"><img
-                      src="images/close-2.svg" alt="" class="table-action-icon-2 x"></a>
+                  <a data-w-id="050f8d5a-0610-3b6a-fc80-7514a44a4155" href="#" class="link-block-12 w-inline-block"><img
+                      src="{% static 'images/edit-24px.svg' %}" alt="" class="table-action-icon"></a>
+                  <a data-w-id="050f8d5a-0610-3b6a-fc80-7514a44a4157" href="#" class="link-block-10 w-inline-block"><img
+                      src="{% static 'images/close-2.svg' %}" alt="" class="table-action-icon-2 x"></a>
                 </div>
               </div>
               <div class="table-row">
                 <div class="table-header _2">
                   <div class="table-row-nr">7</div>
                 </div>
-                <div class="table-box _2"><img src="images/daniil-lobachev-5MrFxXKzZ_o-unsplash.jpg" width="32"
-                    sizes="32px"
-                    srcset="images/daniil-lobachev-5MrFxXKzZ_o-unsplash-p-500.jpeg 500w, images/daniil-lobachev-5MrFxXKzZ_o-unsplash-p-800.jpeg 800w, images/daniil-lobachev-5MrFxXKzZ_o-unsplash-p-1080.jpeg 1080w, images/daniil-lobachev-5MrFxXKzZ_o-unsplash-p-1600.jpeg 1600w, images/daniil-lobachev-5MrFxXKzZ_o-unsplash-p-2000.jpeg 2000w, images/daniil-lobachev-5MrFxXKzZ_o-unsplash-p-2600.jpeg 2600w, images/daniil-lobachev-5MrFxXKzZ_o-unsplash-p-3200.jpeg 3200w, images/daniil-lobachev-5MrFxXKzZ_o-unsplash.jpg 3346w"
+                <div class="table-box _2"><img src="{% static 'images/daniil-lobachev-5MrFxXKzZ_o-unsplash.jpg' %}"
+                    width="32" sizes="31.99652862548828px"
+                    srcset="{% static 'images/daniil-lobachev-5MrFxXKzZ_o-unsplash-p-500.jpeg' %} 500w, {% static 'images/daniil-lobachev-5MrFxXKzZ_o-unsplash-p-800.jpeg' %} 800w, {% static 'images/daniil-lobachev-5MrFxXKzZ_o-unsplash-p-1080.jpeg' %} 1080w, {% static 'images/daniil-lobachev-5MrFxXKzZ_o-unsplash-p-1600.jpeg' %} 1600w, {% static 'images/daniil-lobachev-5MrFxXKzZ_o-unsplash-p-2000.jpeg' %} 2000w, {% static 'images/daniil-lobachev-5MrFxXKzZ_o-unsplash-p-2600.jpeg' %} 2600w, {% static 'images/daniil-lobachev-5MrFxXKzZ_o-unsplash-p-3200.jpeg' %} 3200w, {% static 'images/daniil-lobachev-5MrFxXKzZ_o-unsplash.jpg' %} 3346w"
                     alt="" class="image-7">
                   <div class="table-data name">Justine Chirac</div>
                 </div>
@@ -352,25 +353,25 @@
                   <div class="table-data">Apr 02, 2020</div>
                 </div>
                 <div class="table-box _2 action">
-                  <a href="#" data-ix="toggle" data-w-id="34805223-350c-4abb-8d1a-f344e5d8085e"
+                  <a href="#" data-ix="toggle" data-w-id="050f8d5a-0610-3b6a-fc80-7514a44a416e"
                     class="togglebutton active w-inline-block">
                     <div class="buttontoggle _2"></div>
                   </a>
                 </div>
                 <div class="table-box _2 action">
-                  <a data-w-id="34805223-350c-4abb-8d1a-f344e5d80861" href="#" class="link-block-12 w-inline-block"><img
-                      src="images/edit-24px.svg" alt="" class="table-action-icon"></a>
-                  <a data-w-id="34805223-350c-4abb-8d1a-f344e5d80863" href="#" class="link-block-10 w-inline-block"><img
-                      src="images/close-2.svg" alt="" class="table-action-icon-2 x"></a>
+                  <a data-w-id="050f8d5a-0610-3b6a-fc80-7514a44a4171" href="#" class="link-block-12 w-inline-block"><img
+                      src="{% static 'images/edit-24px.svg' %}" alt="" class="table-action-icon"></a>
+                  <a data-w-id="050f8d5a-0610-3b6a-fc80-7514a44a4173" href="#" class="link-block-10 w-inline-block"><img
+                      src="{% static 'images/close-2.svg' %}" alt="" class="table-action-icon-2 x"></a>
                 </div>
               </div>
               <div class="table-row">
                 <div class="table-header _2">
                   <div class="table-row-nr">8</div>
                 </div>
-                <div class="table-box _2"><img src="images/jorge-vicuna-EMe9pXBq2MI-unsplash.jpg" width="32"
-                    sizes="32px"
-                    srcset="images/jorge-vicuna-EMe9pXBq2MI-unsplash-p-500.jpeg 500w, images/jorge-vicuna-EMe9pXBq2MI-unsplash-p-800.jpeg 800w, images/jorge-vicuna-EMe9pXBq2MI-unsplash-p-1080.jpeg 1080w, images/jorge-vicuna-EMe9pXBq2MI-unsplash-p-1600.jpeg 1600w, images/jorge-vicuna-EMe9pXBq2MI-unsplash-p-2000.jpeg 2000w, images/jorge-vicuna-EMe9pXBq2MI-unsplash-p-2600.jpeg 2600w, images/jorge-vicuna-EMe9pXBq2MI-unsplash.jpg 2768w"
+                <div class="table-box _2"><img src="{% static 'images/jorge-vicuna-EMe9pXBq2MI-unsplash.jpg' %}"
+                    width="32" sizes="31.99652862548828px"
+                    srcset="{% static 'images/jorge-vicuna-EMe9pXBq2MI-unsplash-p-500.jpeg' %} 500w, {% static 'images/jorge-vicuna-EMe9pXBq2MI-unsplash-p-800.jpeg' %} 800w, {% static 'images/jorge-vicuna-EMe9pXBq2MI-unsplash-p-1080.jpeg' %} 1080w, {% static 'images/jorge-vicuna-EMe9pXBq2MI-unsplash-p-1600.jpeg' %} 1600w, {% static 'images/jorge-vicuna-EMe9pXBq2MI-unsplash-p-2000.jpeg' %} 2000w, {% static 'images/jorge-vicuna-EMe9pXBq2MI-unsplash-p-2600.jpeg' %} 2600w, {% static 'images/jorge-vicuna-EMe9pXBq2MI-unsplash.jpg' %} 2768w"
                     alt="" class="image-7">
                   <div class="table-data name">Craig Turner</div>
                 </div>
@@ -387,25 +388,25 @@
                   <div class="table-data">March 30, 2020</div>
                 </div>
                 <div class="table-box _2 action">
-                  <a href="#" data-ix="toggle" data-w-id="34805223-350c-4abb-8d1a-f344e5d8087a"
+                  <a href="#" data-ix="toggle" data-w-id="050f8d5a-0610-3b6a-fc80-7514a44a418a"
                     class="togglebutton active w-inline-block">
                     <div class="buttontoggle _2"></div>
                   </a>
                 </div>
                 <div class="table-box _2 action">
-                  <a data-w-id="34805223-350c-4abb-8d1a-f344e5d8087d" href="#" class="link-block-12 w-inline-block"><img
-                      src="images/edit-24px.svg" alt="" class="table-action-icon"></a>
-                  <a data-w-id="34805223-350c-4abb-8d1a-f344e5d8087f" href="#" class="link-block-10 w-inline-block"><img
-                      src="images/close-2.svg" alt="" class="table-action-icon-2 x"></a>
+                  <a data-w-id="050f8d5a-0610-3b6a-fc80-7514a44a418d" href="#" class="link-block-12 w-inline-block"><img
+                      src="{% static 'images/edit-24px.svg' %}" alt="" class="table-action-icon"></a>
+                  <a data-w-id="050f8d5a-0610-3b6a-fc80-7514a44a418f" href="#" class="link-block-10 w-inline-block"><img
+                      src="{% static 'images/close-2.svg' %}" alt="" class="table-action-icon-2 x"></a>
                 </div>
               </div>
               <div class="table-row">
                 <div class="table-header _2">
                   <div class="table-row-nr">9</div>
                 </div>
-                <div class="table-box _2"><img src="images/christian-buehner-5I_sB86XG7M-unsplash.jpg" width="32"
-                    sizes="32px"
-                    srcset="images/christian-buehner-5I_sB86XG7M-unsplash-p-500.jpeg 500w, images/christian-buehner-5I_sB86XG7M-unsplash-p-800.jpeg 800w, images/christian-buehner-5I_sB86XG7M-unsplash-p-1080.jpeg 1080w, images/christian-buehner-5I_sB86XG7M-unsplash-p-1600.jpeg 1600w, images/christian-buehner-5I_sB86XG7M-unsplash-p-2000.jpeg 2000w, images/christian-buehner-5I_sB86XG7M-unsplash-p-2600.jpeg 2600w, images/christian-buehner-5I_sB86XG7M-unsplash-p-3200.jpeg 3200w, images/christian-buehner-5I_sB86XG7M-unsplash.jpg 5304w"
+                <div class="table-box _2"><img src="{% static 'images/christian-buehner-5I_sB86XG7M-unsplash.jpg' %}"
+                    width="32" sizes="31.99652862548828px"
+                    srcset="{% static 'images/christian-buehner-5I_sB86XG7M-unsplash-p-500.jpeg' %} 500w, {% static 'images/christian-buehner-5I_sB86XG7M-unsplash-p-800.jpeg' %} 800w, {% static 'images/christian-buehner-5I_sB86XG7M-unsplash-p-1080.jpeg' %} 1080w, {% static 'images/christian-buehner-5I_sB86XG7M-unsplash-p-1600.jpeg' %} 1600w, {% static 'images/christian-buehner-5I_sB86XG7M-unsplash-p-2000.jpeg' %} 2000w, {% static 'images/christian-buehner-5I_sB86XG7M-unsplash-p-2600.jpeg' %} 2600w, {% static 'images/christian-buehner-5I_sB86XG7M-unsplash-p-3200.jpeg' %} 3200w, {% static 'images/christian-buehner-5I_sB86XG7M-unsplash.jpg' %} 5304w"
                     alt="" class="image-7">
                   <div class="table-data name">Adrian Piech</div>
                 </div>
@@ -422,25 +423,26 @@
                   <div class="table-data">Mar 22, 2020</div>
                 </div>
                 <div class="table-box _2 action">
-                  <a href="#" data-ix="toggle" data-w-id="34805223-350c-4abb-8d1a-f344e5d80896"
+                  <a href="#" data-ix="toggle" data-w-id="050f8d5a-0610-3b6a-fc80-7514a44a41a6"
                     class="togglebutton active w-inline-block">
                     <div class="buttontoggle _2"></div>
                   </a>
                 </div>
                 <div class="table-box _2 action">
-                  <a data-w-id="34805223-350c-4abb-8d1a-f344e5d80899" href="#" class="link-block-12 w-inline-block"><img
-                      src="images/edit-24px.svg" alt="" class="table-action-icon"></a>
-                  <a data-w-id="34805223-350c-4abb-8d1a-f344e5d8089b" href="#" class="link-block-10 w-inline-block"><img
-                      src="images/close-2.svg" alt="" class="table-action-icon-2 x"></a>
+                  <a data-w-id="050f8d5a-0610-3b6a-fc80-7514a44a41a9" href="#" class="link-block-12 w-inline-block"><img
+                      src="{% static 'images/edit-24px.svg' %}" alt="" class="table-action-icon"></a>
+                  <a data-w-id="050f8d5a-0610-3b6a-fc80-7514a44a41ab" href="#" class="link-block-10 w-inline-block"><img
+                      src="{% static 'images/close-2.svg' %}" alt="" class="table-action-icon-2 x"></a>
                 </div>
               </div>
               <div class="table-row">
                 <div class="table-header _2">
                   <div class="table-row-nr">10</div>
                 </div>
-                <div class="table-box _2"><img src="images/imansyah-muhamad-putera-n4KewLKFOZw-unsplash.jpg" width="32"
-                    sizes="32px"
-                    srcset="images/imansyah-muhamad-putera-n4KewLKFOZw-unsplash-p-800.jpeg 800w, images/imansyah-muhamad-putera-n4KewLKFOZw-unsplash-p-1080.jpeg 1080w, images/imansyah-muhamad-putera-n4KewLKFOZw-unsplash-p-1600.jpeg 1600w, images/imansyah-muhamad-putera-n4KewLKFOZw-unsplash-p-2000.jpeg 2000w, images/imansyah-muhamad-putera-n4KewLKFOZw-unsplash-p-2600.jpeg 2600w, images/imansyah-muhamad-putera-n4KewLKFOZw-unsplash-p-3200.jpeg 3200w, images/imansyah-muhamad-putera-n4KewLKFOZw-unsplash.jpg 3456w"
+                <div class="table-box _2"><img
+                    src="{% static 'images/imansyah-muhamad-putera-n4KewLKFOZw-unsplash.jpg' %}" width="32"
+                    sizes="31.99652862548828px"
+                    srcset="{% static 'images/imansyah-muhamad-putera-n4KewLKFOZw-unsplash-p-800.jpeg' %} 800w, {% static 'images/imansyah-muhamad-putera-n4KewLKFOZw-unsplash-p-1080.jpeg' %} 1080w, {% static 'images/imansyah-muhamad-putera-n4KewLKFOZw-unsplash-p-1600.jpeg' %} 1600w, {% static 'images/imansyah-muhamad-putera-n4KewLKFOZw-unsplash-p-2000.jpeg' %} 2000w, {% static 'images/imansyah-muhamad-putera-n4KewLKFOZw-unsplash-p-2600.jpeg' %} 2600w, {% static 'images/imansyah-muhamad-putera-n4KewLKFOZw-unsplash-p-3200.jpeg' %} 3200w, {% static 'images/imansyah-muhamad-putera-n4KewLKFOZw-unsplash.jpg' %} 3456w"
                     alt="" class="image-7">
                   <div class="table-data name">Paul Stanley</div>
                 </div>
@@ -457,16 +459,16 @@
                   <div class="table-data">Mar 12, 2020</div>
                 </div>
                 <div class="table-box _2 action">
-                  <a href="#" data-ix="toggle" data-w-id="34805223-350c-4abb-8d1a-f344e5d808b2"
+                  <a href="#" data-ix="toggle" data-w-id="050f8d5a-0610-3b6a-fc80-7514a44a41c2"
                     class="togglebutton w-inline-block">
                     <div class="buttontoggle"></div>
                   </a>
                 </div>
                 <div class="table-box _2 action">
-                  <a data-w-id="34805223-350c-4abb-8d1a-f344e5d808b5" href="#" class="link-block-12 w-inline-block"><img
-                      src="images/edit-24px.svg" alt="" class="table-action-icon"></a>
-                  <a data-w-id="34805223-350c-4abb-8d1a-f344e5d808b7" href="#" class="link-block-10 w-inline-block"><img
-                      src="images/close-2.svg" alt="" class="table-action-icon-2 x"></a>
+                  <a data-w-id="050f8d5a-0610-3b6a-fc80-7514a44a41c5" href="#" class="link-block-12 w-inline-block"><img
+                      src="{% static 'images/edit-24px.svg' %}" alt="" class="table-action-icon"></a>
+                  <a data-w-id="050f8d5a-0610-3b6a-fc80-7514a44a41c7" href="#" class="link-block-10 w-inline-block"><img
+                      src="{% static 'images/close-2.svg' %}" alt="" class="table-action-icon-2 x"></a>
                 </div>
               </div>
             </div>
@@ -475,13 +477,13 @@
       </div>
       <div class="table-details-box">
         <div class="div-block-412">
-          <div class="div-block-410"><img src="images/next.svg" alt="" class="table-arrows _2"><img
-              src="images/next-1.svg" alt="" class="table-arrows _2"></div>
+          <div class="div-block-410"><img src="{% static 'images/next.svg' %}" alt="" class="table-arrows _2"><img
+              src="{% static 'images/next-1.svg' %}" alt="" class="table-arrows _2"></div>
           <div class="div-block-411">
             <div>Page <span class="text-span">1</span> of 10</div>
           </div>
-          <div class="div-block-410"><img src="images/next-1.svg" alt="" class="table-arrows"><img src="images/next.svg"
-              alt="" class="table-arrows"></div>
+          <div class="div-block-410"><img src="{% static 'images/next-1.svg' %}" alt="" class="table-arrows"><img
+              src="{% static 'images/next.svg' %}" alt="" class="table-arrows"></div>
         </div>
       </div>
     </div>

@@ -1,6 +1,6 @@
 {% load static %}
 <!DOCTYPE html><!--  This site was created in Webflow. https://www.webflow.com  -->
-<!--  Last Published: Fri Apr 12 2024 00:05:16 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Sat Apr 20 2024 11:23:45 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="66042299f8679b3f134eaa94" data-wf-site="66042299f8679b3f134eaa55">
 
 <head>
@@ -22,7 +22,7 @@
     data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="header-wrapper w-nav">
     <div class="container-default w-container">
       <div class="header-content-wrapper">
-        <a href="{% url 'index' %}" class="header-logo-link w-nav-brand"><img
+        <a href="{% url 'index' %}" aria-current="page" class="header-logo-link w-nav-brand w--current"><img
             src="https://uploads-ssl.webflow.com/63d309d5831cc7bd8997129f/63d309d5831cc7230a9712f9_placeholder-logo-webflow-template-brix-templates.svg"
             alt="" class="header-logo"></a>
         <div class="header-right-side">
@@ -44,13 +44,12 @@
                   <nav class="dropdown-column-wrapper w-dropdown-list">
                     <div class="dropdown-pd">
                       <div class="w-layout-grid grid-1-column dropdown-link-column">
-                        <a href="#" class="dropdown-link w-dropdown-link">Mobile app</a>
-                        <a href="#" class="dropdown-link w-dropdown-link">Desktop app</a>
-                        <a href="#" class="dropdown-link w-dropdown-link">Multiple users</a>
-                        <a href="#" class="dropdown-link w-dropdown-link">Integrations</a>
-                        <a href="#" class="dropdown-link w-dropdown-link">Monthly reports</a>
-                        <a href="#" class="dropdown-link w-dropdown-link">Granular
-                          permissions</a>
+                        <a href="#" class="dropdown-link w-dropdown-link">Order List</a>
+                        <a href="#" class="dropdown-link w-dropdown-link">Order Analysis</a>
+                        <a href="#" class="dropdown-link w-dropdown-link">Order Test</a>
+                        <a href="#" class="dropdown-link w-dropdown-link">Order Test </a>
+                        <a href="#" class="dropdown-link w-dropdown-link">Order Test</a>
+                        <a href="#" class="dropdown-link w-dropdown-link">Order Test</a>
                       </div>
                     </div>
                   </nav>
@@ -60,7 +59,7 @@
                 <a href="{% url 'purchase' %}" class="header-nav-link w-nav-link">Purchase</a>
               </li>
               <li class="header-nav-list-item">
-                <a href="{% url 'customer' %}" class="header-nav-link w-nav-link">Customer</a>
+                <a href="{% url 'customer' %}" target="_blank" class="header-nav-link w-nav-link">Customer</a>
               </li>
               <li class="header-nav-list-item">
                 <a href="#" class="btn-secondary small w-button">Login</a>
@@ -74,7 +73,6 @@
             <div class="hamburger-menu-bar top"></div>
             <div class="hamburger-menu-bar bottom"></div>
           </div>
-          <a href="#" class="btn-primary small header-btn-hidde-on-mb w-button">Get started</a>
         </div>
       </div>
     </div>
@@ -87,7 +85,7 @@
           <div class="cardnumber">7000</div>
           <div class="carddetail">
             <div class="viewdetail">View detail</div>
-            <div class="chevron-right-large"><img src="images/Vectors-Wrapper.svg" loading="lazy"
+            <div class="chevron-right-large"><img src="{% static 'images/Vectors-Wrapper.svg' %}" loading="lazy"
                 width="5.304530143737793" height="9" alt="" class="vectors-wrapper-6"></div>
           </div>
         </div>
@@ -98,7 +96,7 @@
           <div class="cardnumber">12</div>
           <div class="carddetail">
             <div class="viewdetail">View detail</div>
-            <div class="chevron-right-large"><img src="images/Vectors-Wrapper.svg" loading="lazy"
+            <div class="chevron-right-large"><img src="{% static 'images/Vectors-Wrapper.svg' %}" loading="lazy"
                 width="5.304530143737793" height="9" alt="" class="vectors-wrapper-6"></div>
           </div>
         </div>
@@ -109,7 +107,7 @@
           <div class="cardnumber">12</div>
           <div class="carddetail">
             <div class="viewdetail">View detail</div>
-            <div class="chevron-right-large"><img src="images/Vectors-Wrapper.svg" loading="lazy"
+            <div class="chevron-right-large"><img src="{% static 'images/Vectors-Wrapper.svg' %}" loading="lazy"
                 width="5.304530143737793" height="9" alt="" class="vectors-wrapper-6"></div>
           </div>
         </div>
@@ -120,7 +118,7 @@
           <div class="cardnumber">12</div>
           <div class="carddetail">
             <div class="viewdetail">View detail</div>
-            <div class="chevron-right-large"><img src="images/Vectors-Wrapper.svg" loading="lazy"
+            <div class="chevron-right-large"><img src="{% static 'images/Vectors-Wrapper.svg' %}" loading="lazy"
                 width="5.304530143737793" height="9" alt="" class="vectors-wrapper-6"></div>
           </div>
         </div>

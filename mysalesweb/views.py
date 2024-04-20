@@ -9,13 +9,19 @@ def dashboard(request):
     return render(request, 'mysalesweb/dashboard.html')
 
 def product(request):
-    return render(request, 'mysalesweb/products.html')
+    return render(request, 'mysalesweb/product.html')
+
+def productAdd(request):
+    return render(request, 'mysalesweb/productAdd.html')
+
+def productEdit(request):
+    return render(request, 'mysalesweb/productEdit.html')
 
 def purchase(request):
     return render(request, 'mysalesweb/purchase.html')
 
 def purchaseAdd(request):
-    return render(request, 'mysalesweb/purchaseaddnew.html')
+    return render(request, 'mysalesweb/purchaseAdd.html')
 
 def customer(request):
     return render(request, 'mysalesweb/customer.html')

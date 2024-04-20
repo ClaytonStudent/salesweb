@@ -1,6 +1,6 @@
 {% load static %}
 <!DOCTYPE html><!--  This site was created in Webflow. https://www.webflow.com  -->
-<!--  Last Published: Fri Apr 12 2024 00:05:16 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Sat Apr 20 2024 11:23:45 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="6606d1194119ff5b8bb77744" data-wf-site="66042299f8679b3f134eaa55">
 
 <head>
@@ -24,7 +24,7 @@
     data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="header-wrapper w-nav">
     <div class="container-default w-container">
       <div class="header-content-wrapper">
-        <a href="{% url 'index' %}" class="header-logo-link w-nav-brand"><img
+        <a href="{% url 'index' %}" aria-current="page" class="header-logo-link w-nav-brand w--current"><img
             src="https://uploads-ssl.webflow.com/63d309d5831cc7bd8997129f/63d309d5831cc7230a9712f9_placeholder-logo-webflow-template-brix-templates.svg"
             alt="" class="header-logo"></a>
         <div class="header-right-side">
@@ -46,13 +46,12 @@
                   <nav class="dropdown-column-wrapper w-dropdown-list">
                     <div class="dropdown-pd">
                       <div class="w-layout-grid grid-1-column dropdown-link-column">
-                        <a href="#" class="dropdown-link w-dropdown-link">Mobile app</a>
-                        <a href="#" class="dropdown-link w-dropdown-link">Desktop app</a>
-                        <a href="#" class="dropdown-link w-dropdown-link">Multiple users</a>
-                        <a href="#" class="dropdown-link w-dropdown-link">Integrations</a>
-                        <a href="#" class="dropdown-link w-dropdown-link">Monthly reports</a>
-                        <a href="#" class="dropdown-link w-dropdown-link">Granular
-                          permissions</a>
+                        <a href="#" class="dropdown-link w-dropdown-link">Order List</a>
+                        <a href="#" class="dropdown-link w-dropdown-link">Order Analysis</a>
+                        <a href="#" class="dropdown-link w-dropdown-link">Order Test</a>
+                        <a href="#" class="dropdown-link w-dropdown-link">Order Test </a>
+                        <a href="#" class="dropdown-link w-dropdown-link">Order Test</a>
+                        <a href="#" class="dropdown-link w-dropdown-link">Order Test</a>
                       </div>
                     </div>
                   </nav>
@@ -62,7 +61,7 @@
                 <a href="{% url 'purchase' %}" class="header-nav-link w-nav-link">Purchase</a>
               </li>
               <li class="header-nav-list-item">
-                <a href="{% url 'customer' %}" class="header-nav-link w-nav-link">Customer</a>
+                <a href="{% url 'customer' %}" target="_blank" class="header-nav-link w-nav-link">Customer</a>
               </li>
               <li class="header-nav-list-item">
                 <a href="#" class="btn-secondary small w-button">Login</a>
@@ -76,109 +75,6 @@
             <div class="hamburger-menu-bar top"></div>
             <div class="hamburger-menu-bar bottom"></div>
           </div>
-          <a href="#" class="btn-primary small header-btn-hidde-on-mb w-button">Get started</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="popup">
-    <div class="popupblock">
-      <div data-w-id="5b733752-54ad-4452-8381-320350a515e1" class="exitblock"><img src="images/close-2.svg"
-          loading="lazy" width="20" height="20" alt=""></div>
-      <h1 class="heading-title">New Product</h1>
-      <div class="form-block w-form">
-        <form id="email-form-2" name="email-form-2" data-name="Email Form 2" method="get"
-          data-wf-page-id="6606d1194119ff5b8bb77744" data-wf-element-id="5b733752-54ad-4452-8381-320350a515e6">
-          <h1 class="easy-text">Basic</h1>
-          <div id="w-node-_67b29728-9b8e-1bed-e62a-9901261d4ed0-50a515df"
-            class="w-layout-layout quick-stack wf-layout-layout">
-            <div id="w-node-e3736800-b01d-1ed7-8a3b-5443cf475a1d-50a515df" class="w-layout-cell">
-              <div class="from-content">
-                <div class="form-label-text">
-                  <div class="label-text">Name</div><input class="text-field w-input" maxlength="256" name="filed-name"
-                    data-name="filed-name" placeholder="Input Name" type="text" id="filed-name" required="">
-                </div>
-              </div>
-            </div>
-            <div id="w-node-_29318439-3b66-55b9-f570-2da70c6dbec7-50a515df" class="w-layout-cell">
-              <div class="from-content">
-                <div class="form-label-text">
-                  <div class="label-text">Location</div><input class="text-field w-input" maxlength="256"
-                    name="field-location" data-name="field-location" placeholder="Input Location" type="text"
-                    id="field-location" required="">
-                </div>
-              </div>
-            </div>
-            <div id="w-node-dc8289c8-1618-14ad-0e03-a2b5f7a6b7b8-50a515df" class="w-layout-cell">
-              <div class="from-content">
-                <div class="form-label-text">
-                  <div class="label-text">Category</div><input class="text-field w-input" maxlength="256"
-                    name="field-category" data-name="field-category" placeholder="Input Category" type="text"
-                    id="field-category" required="">
-                </div>
-              </div>
-            </div>
-            <div id="w-node-_9675e8ea-78fb-efd3-24a0-8d3fe80ebd46-50a515df" class="w-layout-cell">
-              <div class="from-content">
-                <div class="form-label-text">
-                  <div class="label-text">Barcode</div><input class="text-field w-input" maxlength="256"
-                    name="field-barcode" data-name="field-barcode" placeholder="Input Barcode" type="text"
-                    id="field-barcode" required="">
-                </div>
-              </div>
-            </div>
-            <div id="w-node-e27abb57-3956-f40f-3df6-f7f87ce4b1be-50a515df" class="w-layout-cell">
-              <div class="from-content">
-                <div class="form-label-text">
-                  <div class="label-text">Code</div><input class="text-field w-input" maxlength="256" name="field-code"
-                    data-name="field-code" placeholder="Input Code" type="text" id="field-code" required="">
-                </div>
-              </div>
-            </div>
-            <div id="w-node-e52ef597-2468-aacb-70f9-78f0942fc223-50a515df" class="w-layout-cell">
-              <div class="from-content">
-                <div class="form-label-text">
-                  <div class="label-text">Price</div><input class="text-field w-input" maxlength="256"
-                    name="field-price" data-name="field-price" placeholder="Input Price" type="text" id="field-price"
-                    required="">
-                </div>
-              </div>
-            </div>
-            <div id="w-node-_2cb7bb0d-3127-824d-af87-fe1cce7ad4d3-50a515df" class="w-layout-cell">
-              <div class="from-content">
-                <div class="form-label-text">
-                  <div class="label-text">Quantity</div><input class="text-field w-input" maxlength="256"
-                    name="field-quantity" data-name="field-quantity" placeholder="Input Quantity" type="text"
-                    id="field-quantity" required="">
-                </div>
-              </div>
-            </div>
-            <div id="w-node-_1f9db967-9a39-41d4-2cbf-b47636a03d74-50a515df" class="w-layout-cell">
-              <div class="from-content">
-                <div class="form-label-text">
-                  <div class="label-text">Unit</div><input class="text-field w-input" maxlength="256" name="field-unit"
-                    data-name="field-unit" placeholder="Input Unit" type="text" id="field-unit" required="">
-                </div>
-              </div>
-            </div>
-            <div id="w-node-_24e36ac2-2251-642d-ffe8-4bbfffbbabb6-50a515df" class="w-layout-cell">
-              <div class="from-content">
-                <div class="form-label-text">
-                  <div class="label-text">Note</div><input class="text-field w-input" maxlength="256" name="field-note"
-                    data-name="field-note" placeholder="Input Note" type="text" id="field-note" required="">
-                </div>
-              </div>
-            </div>
-          </div>
-          <h1 class="easy-text">Media</h1><img width="32" height="32" alt="" src="images/Vectors-Wrapper_1.svg"
-            loading="lazy" class="vectors-wrapper"><input type="submit" data-wait="Please wait..."
-            class="add-button submit w-button" value="Submit">
-        </form>
-        <div class="w-form-done">
-          <div>Thank you! Your submission has been received!</div>
-        </div>
-        <div class="w-form-fail">
-          <div>Oops! Something went wrong while submitting the form.</div>
         </div>
       </div>
     </div>
@@ -209,9 +105,10 @@
         </div>
         <form action="/search" class="search saved-shortlists w-form"><input class="search-input w-input"
             maxlength="256" name="query" placeholder="Search..." type="search" id="search" required=""><input
-            type="submit" class="search-button _2 w-button" value="Search"><img src="images/search.svg" alt=""
-            class="search-icon"></form>
-        <a data-w-id="fb925edc-a920-2bd7-9996-e52069308c1a" href="#" target="_blank" class="add-button w-button">Add</a>
+            type="submit" class="search-button _2 w-button" value="Search"><img src="{% static 'images/search.svg' %}"
+            alt="" class="search-icon"></form>
+        <a data-w-id="fb925edc-a920-2bd7-9996-e52069308c1a" href="{% url 'productAdd' %}" target="_blank"
+          class="add-button w-button">Add</a>
       </div>
     </div>
     <div class="table-wrapper">
@@ -248,8 +145,8 @@
                   <div class="table-row-nr">1</div>
                 </div>
                 <div class="table-box _2"><img
-                    src="images/5dd1ca04edfe6a591970a2cd_face-chad_15dd1ca04edfe6a591970a2cd_face-chad.jpg" width="32"
-                    alt="" class="image-7">
+                    src="{% static 'images/5dd1ca04edfe6a591970a2cd_face-chad_15dd1ca04edfe6a591970a2cd_face-chad.jpg' %}"
+                    width="32" alt="" class="image-7">
                   <div class="table-data name">USB 32GB 2.0 </div>
                 </div>
                 <div class="table-box _2">
@@ -271,10 +168,11 @@
                   </a>
                 </div>
                 <div class="table-box _2 action">
-                  <a data-w-id="fb925edc-a920-2bd7-9996-e52069308c66" href="#" class="link-block-12 w-inline-block"><img
-                      src="images/edit-24px.svg" alt="" class="table-action-icon"></a>
+                  <a data-w-id="fb925edc-a920-2bd7-9996-e52069308c66" href="{% url 'productEdit' %}"
+                    class="link-block-12 w-inline-block"><img src="{% static 'images/edit-24px.svg' %}" alt=""
+                      class="table-action-icon"></a>
                   <a data-w-id="fb925edc-a920-2bd7-9996-e52069308c68" href="#" class="link-block-10 w-inline-block"><img
-                      src="images/close-2.svg" alt="" class="table-action-icon-2 x"></a>
+                      src="{% static 'images/close-2.svg' %}" alt="" class="table-action-icon-2 x"></a>
                 </div>
               </div>
               <div class="table-row">
@@ -282,8 +180,8 @@
                   <div class="table-row-nr">2</div>
                 </div>
                 <div class="table-box _2"><img
-                    src="images/5dd1ca04edfe6a591970a2cd_face-chad_15dd1ca04edfe6a591970a2cd_face-chad.jpg" width="32"
-                    alt="" class="image-7">
+                    src="{% static 'images/5dd1ca04edfe6a591970a2cd_face-chad_15dd1ca04edfe6a591970a2cd_face-chad.jpg' %}"
+                    width="32" alt="" class="image-7">
                   <div class="table-data name">USB 32GB 2.0 </div>
                 </div>
                 <div class="table-box _2">
@@ -306,9 +204,9 @@
                 </div>
                 <div class="table-box _2 action">
                   <a data-w-id="fb925edc-a920-2bd7-9996-e52069308c81" href="#" class="link-block-12 w-inline-block"><img
-                      src="images/edit-24px.svg" alt="" class="table-action-icon"></a>
+                      src="{% static 'images/edit-24px.svg' %}" alt="" class="table-action-icon"></a>
                   <a data-w-id="fb925edc-a920-2bd7-9996-e52069308c83" href="#" class="link-block-10 w-inline-block"><img
-                      src="images/close-2.svg" alt="" class="table-action-icon-2 x"></a>
+                      src="{% static 'images/close-2.svg' %}" alt="" class="table-action-icon-2 x"></a>
                 </div>
               </div>
               <div class="table-row">
@@ -316,8 +214,8 @@
                   <div class="table-row-nr">3</div>
                 </div>
                 <div class="table-box _2"><img
-                    src="images/5dd1ca04edfe6a591970a2cd_face-chad_15dd1ca04edfe6a591970a2cd_face-chad.jpg" width="32"
-                    alt="" class="image-7">
+                    src="{% static 'images/5dd1ca04edfe6a591970a2cd_face-chad_15dd1ca04edfe6a591970a2cd_face-chad.jpg' %}"
+                    width="32" alt="" class="image-7">
                   <div class="table-data name">USB 32GB 2.0 </div>
                 </div>
                 <div class="table-box _2">
@@ -338,9 +236,9 @@
                 </div>
                 <div class="table-box _2 action">
                   <a data-w-id="fb925edc-a920-2bd7-9996-e52069308c9a" href="#" class="link-block-12 w-inline-block"><img
-                      src="images/edit-24px.svg" alt="" class="table-action-icon"></a>
+                      src="{% static 'images/edit-24px.svg' %}" alt="" class="table-action-icon"></a>
                   <a data-w-id="fb925edc-a920-2bd7-9996-e52069308c9c" href="#" class="link-block-10 w-inline-block"><img
-                      src="images/close-2.svg" alt="" class="table-action-icon-2 x"></a>
+                      src="{% static 'images/close-2.svg' %}" alt="" class="table-action-icon-2 x"></a>
                 </div>
               </div>
               <div class="table-row">
@@ -348,8 +246,8 @@
                   <div class="table-row-nr">4</div>
                 </div>
                 <div class="table-box _2"><img
-                    src="images/5dd1ca04edfe6a591970a2cd_face-chad_15dd1ca04edfe6a591970a2cd_face-chad.jpg" width="32"
-                    alt="" class="image-7">
+                    src="{% static 'images/5dd1ca04edfe6a591970a2cd_face-chad_15dd1ca04edfe6a591970a2cd_face-chad.jpg' %}"
+                    width="32" alt="" class="image-7">
                   <div class="table-data name">USB 32GB 2.0 </div>
                 </div>
                 <div class="table-box _2">
@@ -372,9 +270,9 @@
                 </div>
                 <div class="table-box _2 action">
                   <a data-w-id="fb925edc-a920-2bd7-9996-e52069308cb5" href="#" class="link-block-12 w-inline-block"><img
-                      src="images/edit-24px.svg" alt="" class="table-action-icon"></a>
+                      src="{% static 'images/edit-24px.svg' %}" alt="" class="table-action-icon"></a>
                   <a data-w-id="fb925edc-a920-2bd7-9996-e52069308cb7" href="#" class="link-block-10 w-inline-block"><img
-                      src="images/close-2.svg" alt="" class="table-action-icon-2 x"></a>
+                      src="{% static 'images/close-2.svg' %}" alt="" class="table-action-icon-2 x"></a>
                 </div>
               </div>
               <div class="table-row">
@@ -382,8 +280,8 @@
                   <div class="table-row-nr">5</div>
                 </div>
                 <div class="table-box _2"><img
-                    src="images/5dd1ca04edfe6a591970a2cd_face-chad_15dd1ca04edfe6a591970a2cd_face-chad.jpg" width="32"
-                    alt="" class="image-7">
+                    src="{% static 'images/5dd1ca04edfe6a591970a2cd_face-chad_15dd1ca04edfe6a591970a2cd_face-chad.jpg' %}"
+                    width="32" alt="" class="image-7">
                   <div class="table-data name">USB 32GB 2.0 </div>
                 </div>
                 <div class="table-box _2">
@@ -404,9 +302,9 @@
                 </div>
                 <div class="table-box _2 action">
                   <a data-w-id="fb925edc-a920-2bd7-9996-e52069308cce" href="#" class="link-block-12 w-inline-block"><img
-                      src="images/edit-24px.svg" alt="" class="table-action-icon"></a>
+                      src="{% static 'images/edit-24px.svg' %}" alt="" class="table-action-icon"></a>
                   <a data-w-id="fb925edc-a920-2bd7-9996-e52069308cd0" href="#" class="link-block-10 w-inline-block"><img
-                      src="images/close-2.svg" alt="" class="table-action-icon-2 x"></a>
+                      src="{% static 'images/close-2.svg' %}" alt="" class="table-action-icon-2 x"></a>
                 </div>
               </div>
               <div class="table-row">
@@ -414,8 +312,8 @@
                   <div class="table-row-nr">6</div>
                 </div>
                 <div class="table-box _2"><img
-                    src="images/5dd1ca04edfe6a591970a2cd_face-chad_15dd1ca04edfe6a591970a2cd_face-chad.jpg" width="32"
-                    alt="" class="image-7">
+                    src="{% static 'images/5dd1ca04edfe6a591970a2cd_face-chad_15dd1ca04edfe6a591970a2cd_face-chad.jpg' %}"
+                    width="32" alt="" class="image-7">
                   <div class="table-data name">USB 32GB 2.0 </div>
                 </div>
                 <div class="table-box _2">
@@ -436,9 +334,9 @@
                 </div>
                 <div class="table-box _2 action">
                   <a data-w-id="fb925edc-a920-2bd7-9996-e52069308ce8" href="#" class="link-block-12 w-inline-block"><img
-                      src="images/edit-24px.svg" alt="" class="table-action-icon"></a>
+                      src="{% static 'images/edit-24px.svg' %}" alt="" class="table-action-icon"></a>
                   <a data-w-id="fb925edc-a920-2bd7-9996-e52069308cea" href="#" class="link-block-10 w-inline-block"><img
-                      src="images/close-2.svg" alt="" class="table-action-icon-2 x"></a>
+                      src="{% static 'images/close-2.svg' %}" alt="" class="table-action-icon-2 x"></a>
                 </div>
               </div>
               <div class="table-row">
@@ -446,8 +344,8 @@
                   <div class="table-row-nr">7</div>
                 </div>
                 <div class="table-box _2"><img
-                    src="images/5dd1ca04edfe6a591970a2cd_face-chad_15dd1ca04edfe6a591970a2cd_face-chad.jpg" width="32"
-                    alt="" class="image-7">
+                    src="{% static 'images/5dd1ca04edfe6a591970a2cd_face-chad_15dd1ca04edfe6a591970a2cd_face-chad.jpg' %}"
+                    width="32" alt="" class="image-7">
                   <div class="table-data name">USB 32GB 2.0 </div>
                 </div>
                 <div class="table-box _2">
@@ -470,9 +368,9 @@
                 </div>
                 <div class="table-box _2 action">
                   <a data-w-id="fb925edc-a920-2bd7-9996-e52069308d03" href="#" class="link-block-12 w-inline-block"><img
-                      src="images/edit-24px.svg" alt="" class="table-action-icon"></a>
+                      src="{% static 'images/edit-24px.svg' %}" alt="" class="table-action-icon"></a>
                   <a data-w-id="fb925edc-a920-2bd7-9996-e52069308d05" href="#" class="link-block-10 w-inline-block"><img
-                      src="images/close-2.svg" alt="" class="table-action-icon-2 x"></a>
+                      src="{% static 'images/close-2.svg' %}" alt="" class="table-action-icon-2 x"></a>
                 </div>
               </div>
               <div class="table-row">
@@ -480,8 +378,8 @@
                   <div class="table-row-nr">8</div>
                 </div>
                 <div class="table-box _2"><img
-                    src="images/5dd1ca04edfe6a591970a2cd_face-chad_15dd1ca04edfe6a591970a2cd_face-chad.jpg" width="32"
-                    alt="" class="image-7">
+                    src="{% static 'images/5dd1ca04edfe6a591970a2cd_face-chad_15dd1ca04edfe6a591970a2cd_face-chad.jpg' %}"
+                    width="32" alt="" class="image-7">
                   <div class="table-data name">USB 32GB 2.0 </div>
                 </div>
                 <div class="table-box _2">
@@ -504,9 +402,9 @@
                 </div>
                 <div class="table-box _2 action">
                   <a data-w-id="fb925edc-a920-2bd7-9996-e52069308d1e" href="#" class="link-block-12 w-inline-block"><img
-                      src="images/edit-24px.svg" alt="" class="table-action-icon"></a>
+                      src="{% static 'images/edit-24px.svg' %}" alt="" class="table-action-icon"></a>
                   <a data-w-id="fb925edc-a920-2bd7-9996-e52069308d20" href="#" class="link-block-10 w-inline-block"><img
-                      src="images/close-2.svg" alt="" class="table-action-icon-2 x"></a>
+                      src="{% static 'images/close-2.svg' %}" alt="" class="table-action-icon-2 x"></a>
                 </div>
               </div>
               <div class="table-row">
@@ -514,8 +412,8 @@
                   <div class="table-row-nr">9</div>
                 </div>
                 <div class="table-box _2"><img
-                    src="images/5dd1ca04edfe6a591970a2cd_face-chad_15dd1ca04edfe6a591970a2cd_face-chad.jpg" width="32"
-                    alt="" class="image-7">
+                    src="{% static 'images/5dd1ca04edfe6a591970a2cd_face-chad_15dd1ca04edfe6a591970a2cd_face-chad.jpg' %}"
+                    width="32" alt="" class="image-7">
                   <div class="table-data name">USB 32GB 2.0 </div>
                 </div>
                 <div class="table-box _2">
@@ -538,9 +436,9 @@
                 </div>
                 <div class="table-box _2 action">
                   <a data-w-id="fb925edc-a920-2bd7-9996-e52069308d39" href="#" class="link-block-12 w-inline-block"><img
-                      src="images/edit-24px.svg" alt="" class="table-action-icon"></a>
+                      src="{% static 'images/edit-24px.svg' %}" alt="" class="table-action-icon"></a>
                   <a data-w-id="fb925edc-a920-2bd7-9996-e52069308d3b" href="#" class="link-block-10 w-inline-block"><img
-                      src="images/close-2.svg" alt="" class="table-action-icon-2 x"></a>
+                      src="{% static 'images/close-2.svg' %}" alt="" class="table-action-icon-2 x"></a>
                 </div>
               </div>
               <div class="table-row">
@@ -548,8 +446,8 @@
                   <div class="table-row-nr">10</div>
                 </div>
                 <div class="table-box _2"><img
-                    src="images/5dd1ca04edfe6a591970a2cd_face-chad_15dd1ca04edfe6a591970a2cd_face-chad.jpg" width="32"
-                    alt="" class="image-7">
+                    src="{% static 'images/5dd1ca04edfe6a591970a2cd_face-chad_15dd1ca04edfe6a591970a2cd_face-chad.jpg' %}"
+                    width="32" alt="" class="image-7">
                   <div class="table-data name">USB 32GB 2.0 </div>
                 </div>
                 <div class="table-box _2">
@@ -570,9 +468,9 @@
                 </div>
                 <div class="table-box _2 action">
                   <a data-w-id="fb925edc-a920-2bd7-9996-e52069308d52" href="#" class="link-block-12 w-inline-block"><img
-                      src="images/edit-24px.svg" alt="" class="table-action-icon"></a>
+                      src="{% static 'images/edit-24px.svg' %}" alt="" class="table-action-icon"></a>
                   <a data-w-id="fb925edc-a920-2bd7-9996-e52069308d54" href="#" class="link-block-10 w-inline-block"><img
-                      src="images/close-2.svg" alt="" class="table-action-icon-2 x"></a>
+                      src="{% static 'images/close-2.svg' %}" alt="" class="table-action-icon-2 x"></a>
                 </div>
               </div>
             </div>
@@ -581,13 +479,13 @@
       </div>
       <div class="table-details-box">
         <div class="div-block-412">
-          <div class="div-block-410"><img src="images/next.svg" alt="" class="table-arrows _2"><img
-              src="images/next-1.svg" alt="" class="table-arrows _2"></div>
+          <div class="div-block-410"><img src="{% static 'images/next.svg' %}" alt="" class="table-arrows _2"><img
+              src="{% static 'images/next-1.svg' %}" alt="" class="table-arrows _2"></div>
           <div class="div-block-411">
             <div>Page <span class="text-span">1</span> of 10</div>
           </div>
-          <div class="div-block-410"><img src="images/next-1.svg" alt="" class="table-arrows"><img src="images/next.svg"
-              alt="" class="table-arrows"></div>
+          <div class="div-block-410"><img src="{% static 'images/next-1.svg' %}" alt="" class="table-arrows"><img
+              src="{% static 'images/next.svg' %}" alt="" class="table-arrows"></div>
         </div>
       </div>
     </div>

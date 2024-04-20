@@ -1,13 +1,13 @@
 {% load static %}
 <!DOCTYPE html><!--  This site was created in Webflow. https://www.webflow.com  -->
 <!--  Last Published: Sat Apr 20 2024 11:23:45 GMT+0000 (Coordinated Universal Time)  -->
-<html data-wf-page="661443ee503901fa09766ded" data-wf-site="66042299f8679b3f134eaa55">
+<html data-wf-page="661deeeb19c647c1b065f303" data-wf-site="66042299f8679b3f134eaa55">
 
 <head>
   <meta charset="utf-8">
-  <title>PurchaseAddNew</title>
-  <meta content="PurchaseAddNew" property="og:title">
-  <meta content="PurchaseAddNew" property="twitter:title">
+  <title>ProductAdd</title>
+  <meta content="ProductAdd" property="og:title">
+  <meta content="ProductAdd" property="twitter:title">
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <meta content="Webflow" name="generator">
   <link href="{% static 'css/normalize.css' %}" rel="stylesheet" type="text/css">
@@ -80,67 +80,56 @@
     </div>
   </div>
   <section class="section">
-    <div class="sectionheader">
-      <div class="sectionheadercomponent">
-        <h1 class="heading-title">New Purchase</h1>
-        <form action="/search" class="search saved-shortlists w-form"><input class="search-input w-input"
-            maxlength="256" name="query" placeholder="Search..." type="search" id="search" required=""><input
-            type="submit" class="search-button _2 w-button" value="Search"><img src="{% static 'images/search.svg' %}"
-            alt="" class="search-icon"></form>
-        <a data-w-id="0b85913a-852b-51ac-8093-809083442de5" href="{% url 'productAdd' %}" target="_blank"
-          class="add-button w-button">Add Product</a>
-      </div>
+    <div class="ms-page-wrap">
       <div class="w-form">
-        <form id="email-form" name="email-form" data-name="Email Form" method="get"
-          data-wf-page-id="661443ee503901fa09766ded" data-wf-element-id="cceccfdf-f45f-4491-5115-c0e845e92a19">
-          <div data-hover="false" data-delay="0" class="w-dropdown">
-            <div class="w-dropdown-toggle">
-              <div class="w-icon-dropdown-toggle"></div>
-              <div>Provider</div>
+        <form id="wf-form-Page-Form" name="wf-form-Page-Form" data-name="Page Form" method="get"
+          data-wf-page-id="661deeeb19c647c1b065f303" data-wf-element-id="7da637d9-6b0d-4283-e7f5-de992b846762">
+          <div class="ms-container">
+            <div class="ms-header">
+              <h1 class="heading-title">Product</h1>
             </div>
-            <nav class="dropdown-list w-dropdown-list">
-              <a href="#" class="w-dropdown-link">Provider 1</a>
-              <a href="#" class="w-dropdown-link">Provider 2</a>
-              <a href="#" class="w-dropdown-link">Provider 3</a>
-            </nav>
-          </div>
-          <h1 class="heading-title">Products</h1>
-          <div class="table-wrapper">
-            <div class="table-row head">
-              <div class="table-header"></div>
-              <div class="table-box">
-                <div class="table-heading">Name</div>
-              </div>
-              <div class="table-box">
-                <div class="table-heading">Category</div>
-              </div>
-              <div class="table-box">
-                <div class="table-heading">Barcode</div>
-              </div>
-              <div class="table-box">
-                <div class="table-heading">Location</div>
-              </div>
-              <div class="table-box _11">
-                <div class="table-heading">Stock</div>
-              </div>
-              <div class="table-box action">
-                <div class="table-heading">Status</div>
-              </div>
-              <div class="table-box action">
-                <div class="table-heading">Action</div>
-              </div>
-            </div>
-            <div class="table-container">
-              <div class="table-data-wrapper">
-                <div class="scroll-container">
-                  <div class="scroll-table-content">
-                    <div class="table-row">
+            <div class="ms-column-wrap">
+              <div class="ms-column _50 padding">
+                <div><label for="email-2" class="ms-input-label w-clearfix">Basic</label>
+                  <div class="ms-input-wrap">
+                    <div class="ms-input-outer"><input class="ms-input top w-input" maxlength="256" name="input8"
+                        data-name="input8" placeholder="Name" type="text" id="input-9" data-ms-member="FIELD_ID">
+                      <div class="ms-input-middle-row"><input class="ms-input middle left w-input" maxlength="256"
+                          name="input9" data-name="input9" placeholder="Location" type="text" id="input9"
+                          data-ms-member="FIELD_ID"><select id="input-11" name="input10" data-name="input10"
+                          data-ms-member="FIELD_ID" class="ms-input middle right w-select">
+                          <option value="">Category</option>
+                          <option value="First">First choice</option>
+                          <option value="Second">Second choice</option>
+                          <option value="Third">Third choice</option>
+                        </select></div>
+                      <div class="ms-input-middle-row"><input class="ms-input bottom w-input" maxlength="256"
+                          name="input11" data-name="input11" placeholder="Barcode" type="text" id="input11"
+                          data-ms-member="FIELD_ID"><input class="ms-input bottom w-input" maxlength="256"
+                          name="input12" data-name="input12" placeholder="Code" type="text" id="input-12"
+                          data-ms-member="FIELD_ID"></div>
                     </div>
-                  </div>
-                </div>
+                  </div><label for="email-2" class="ms-input-label w-clearfix">Inventory</label>
+                  <div class="ms-input-wrap">
+                    <div class="ms-input-middle-row"><input class="ms-input middle left w-input" maxlength="256"
+                        name="input6" data-name="input6" placeholder="Quantity" type="text" id="input-13"
+                        data-ms-member="FIELD_ID"><select id="input-14" name="input7" data-name="input7"
+                        data-ms-member="FIELD_ID" class="ms-input middle right w-select">
+                        <option value="">Unit</option>
+                        <option value="First">First choice</option>
+                        <option value="Second">Second choice</option>
+                        <option value="Third">Third choice</option>
+                      </select></div>
+                  </div><label for="email-2" class="ms-input-label w-clearfix">Sales Info</label>
+                  <div class="ms-input-wrap"><input class="ms-input w-input" maxlength="256" name="Email-2"
+                      data-name="Email 2" placeholder="Price" type="email" id="Email-2" data-ms-member="FIELD_ID"
+                      required=""></div><label for="email-2" class="ms-input-label w-clearfix">Media</label>
+                  <div class="ms-input-wrap"><img width="32" height="32" alt=""
+                      src="{% static 'images/Vectors-Wrapper_1.svg' %}" loading="lazy" class="vectors-wrapper"></div>
+                </div><input type="submit" data-wait="Please wait..." class="add-button submit w-button" value="Submit">
               </div>
             </div>
-          </div><input type="submit" data-wait="Please wait..." class="add-button w-button" value="Submit">
+          </div>
         </form>
         <div class="w-form-done">
           <div>Thank you! Your submission has been received!</div>

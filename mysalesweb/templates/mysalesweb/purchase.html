@@ -1,6 +1,6 @@
 {% load static %}
 <!DOCTYPE html><!--  This site was created in Webflow. https://www.webflow.com  -->
-<!--  Last Published: Fri Apr 12 2024 00:05:16 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Sat Apr 20 2024 11:23:45 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="66140177c0a0d1f3a0ac0f38" data-wf-site="66042299f8679b3f134eaa55">
 
 <head>
@@ -24,7 +24,7 @@
     data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="header-wrapper w-nav">
     <div class="container-default w-container">
       <div class="header-content-wrapper">
-        <a href="{% url 'index' %}" class="header-logo-link w-nav-brand"><img
+        <a href="{% url 'index' %}" aria-current="page" class="header-logo-link w-nav-brand w--current"><img
             src="https://uploads-ssl.webflow.com/63d309d5831cc7bd8997129f/63d309d5831cc7230a9712f9_placeholder-logo-webflow-template-brix-templates.svg"
             alt="" class="header-logo"></a>
         <div class="header-right-side">
@@ -46,13 +46,12 @@
                   <nav class="dropdown-column-wrapper w-dropdown-list">
                     <div class="dropdown-pd">
                       <div class="w-layout-grid grid-1-column dropdown-link-column">
-                        <a href="#" class="dropdown-link w-dropdown-link">Mobile app</a>
-                        <a href="#" class="dropdown-link w-dropdown-link">Desktop app</a>
-                        <a href="#" class="dropdown-link w-dropdown-link">Multiple users</a>
-                        <a href="#" class="dropdown-link w-dropdown-link">Integrations</a>
-                        <a href="#" class="dropdown-link w-dropdown-link">Monthly reports</a>
-                        <a href="#" class="dropdown-link w-dropdown-link">Granular
-                          permissions</a>
+                        <a href="#" class="dropdown-link w-dropdown-link">Order List</a>
+                        <a href="#" class="dropdown-link w-dropdown-link">Order Analysis</a>
+                        <a href="#" class="dropdown-link w-dropdown-link">Order Test</a>
+                        <a href="#" class="dropdown-link w-dropdown-link">Order Test </a>
+                        <a href="#" class="dropdown-link w-dropdown-link">Order Test</a>
+                        <a href="#" class="dropdown-link w-dropdown-link">Order Test</a>
                       </div>
                     </div>
                   </nav>
@@ -62,7 +61,7 @@
                 <a href="{% url 'purchase' %}" class="header-nav-link w-nav-link">Purchase</a>
               </li>
               <li class="header-nav-list-item">
-                <a href="{% url 'customer' %}" class="header-nav-link w-nav-link">Customer</a>
+                <a href="{% url 'customer' %}" target="_blank" class="header-nav-link w-nav-link">Customer</a>
               </li>
               <li class="header-nav-list-item">
                 <a href="#" class="btn-secondary small w-button">Login</a>
@@ -76,7 +75,6 @@
             <div class="hamburger-menu-bar top"></div>
             <div class="hamburger-menu-bar bottom"></div>
           </div>
-          <a href="#" class="btn-primary small header-btn-hidde-on-mb w-button">Get started</a>
         </div>
       </div>
     </div>
@@ -84,11 +82,11 @@
   <div class="wrapper-section purchase">
     <div class="sectionheader">
       <div class="sectionheadercomponent">
-        <h1 class="heading-title">Purchase</h1>
+        <h1 class="heading-title">Customer</h1>
         <form action="/search" class="search saved-shortlists w-form"><input class="search-input w-input"
             maxlength="256" name="query" placeholder="Search..." type="search" id="search" required=""><input
-            type="submit" class="search-button _2 w-button" value="Search"><img src="images/search.svg" alt=""
-            class="search-icon"></form>
+            type="submit" class="search-button _2 w-button" value="Search"><img src="{% static 'images/search.svg' %}"
+            alt="" class="search-icon"></form>
         <a href="{% url 'purchaseAdd' %}" target="_blank" class="add-button w-button">Add</a>
       </div>
     </div>
@@ -141,16 +139,16 @@
                   <div class="table-data">100</div>
                 </div>
                 <div class="table-box _2 action">
-                  <a href="#" data-ix="toggle" data-w-id="0da7354a-0aef-12af-8114-37b1c948c2ea"
+                  <a href="#" data-ix="toggle" data-w-id="49a56caf-df4a-14d9-3286-d89d44ffdd54"
                     class="togglebutton active w-inline-block">
                     <div class="buttontoggle _2"></div>
                   </a>
                 </div>
                 <div class="table-box _2 action">
-                  <a data-w-id="0da7354a-0aef-12af-8114-37b1c948c2ed" href="#" class="link-block-12 w-inline-block"><img
-                      src="images/edit-24px.svg" alt="" class="table-action-icon"></a>
-                  <a data-w-id="0da7354a-0aef-12af-8114-37b1c948c2ef" href="#" class="link-block-10 w-inline-block"><img
-                      src="images/close-2.svg" alt="" class="table-action-icon-2 x"></a>
+                  <a data-w-id="49a56caf-df4a-14d9-3286-d89d44ffdd57" href="#" class="link-block-12 w-inline-block"><img
+                      src="{% static 'images/edit-24px.svg' %}" alt="" class="table-action-icon"></a>
+                  <a data-w-id="49a56caf-df4a-14d9-3286-d89d44ffdd59" href="#" class="link-block-10 w-inline-block"><img
+                      src="{% static 'images/close-2.svg' %}" alt="" class="table-action-icon-2 x"></a>
                 </div>
               </div>
               <div class="table-row">
@@ -173,16 +171,16 @@
                   <div class="table-data">100</div>
                 </div>
                 <div class="table-box _2 action">
-                  <a href="#" data-ix="toggle" data-w-id="0da7354a-0aef-12af-8114-37b1c948c306"
+                  <a href="#" data-ix="toggle" data-w-id="49a56caf-df4a-14d9-3286-d89d44ffdd6f"
                     class="togglebutton active w-inline-block">
                     <div class="buttontoggle _2"></div>
                   </a>
                 </div>
                 <div class="table-box _2 action">
-                  <a data-w-id="0da7354a-0aef-12af-8114-37b1c948c309" href="#" class="link-block-12 w-inline-block"><img
-                      src="images/edit-24px.svg" alt="" class="table-action-icon"></a>
-                  <a data-w-id="0da7354a-0aef-12af-8114-37b1c948c30b" href="#" class="link-block-10 w-inline-block"><img
-                      src="images/close-2.svg" alt="" class="table-action-icon-2 x"></a>
+                  <a data-w-id="49a56caf-df4a-14d9-3286-d89d44ffdd72" href="#" class="link-block-12 w-inline-block"><img
+                      src="{% static 'images/edit-24px.svg' %}" alt="" class="table-action-icon"></a>
+                  <a data-w-id="49a56caf-df4a-14d9-3286-d89d44ffdd74" href="#" class="link-block-10 w-inline-block"><img
+                      src="{% static 'images/close-2.svg' %}" alt="" class="table-action-icon-2 x"></a>
                 </div>
               </div>
               <div class="table-row">
@@ -203,16 +201,16 @@
                   <div class="table-data">100</div>
                 </div>
                 <div class="table-box _2 action">
-                  <a href="#" data-ix="toggle" data-w-id="0da7354a-0aef-12af-8114-37b1c948c322"
+                  <a href="#" data-ix="toggle" data-w-id="49a56caf-df4a-14d9-3286-d89d44ffdd88"
                     class="togglebutton w-inline-block">
                     <div class="buttontoggle"></div>
                   </a>
                 </div>
                 <div class="table-box _2 action">
-                  <a data-w-id="0da7354a-0aef-12af-8114-37b1c948c325" href="#" class="link-block-12 w-inline-block"><img
-                      src="images/edit-24px.svg" alt="" class="table-action-icon"></a>
-                  <a data-w-id="0da7354a-0aef-12af-8114-37b1c948c327" href="#" class="link-block-10 w-inline-block"><img
-                      src="images/close-2.svg" alt="" class="table-action-icon-2 x"></a>
+                  <a data-w-id="49a56caf-df4a-14d9-3286-d89d44ffdd8b" href="#" class="link-block-12 w-inline-block"><img
+                      src="{% static 'images/edit-24px.svg' %}" alt="" class="table-action-icon"></a>
+                  <a data-w-id="49a56caf-df4a-14d9-3286-d89d44ffdd8d" href="#" class="link-block-10 w-inline-block"><img
+                      src="{% static 'images/close-2.svg' %}" alt="" class="table-action-icon-2 x"></a>
                 </div>
               </div>
               <div class="table-row">
@@ -235,16 +233,16 @@
                   <div class="table-data">100</div>
                 </div>
                 <div class="table-box _2 action">
-                  <a href="#" data-ix="toggle" data-w-id="0da7354a-0aef-12af-8114-37b1c948c33e"
+                  <a href="#" data-ix="toggle" data-w-id="49a56caf-df4a-14d9-3286-d89d44ffdda3"
                     class="togglebutton active w-inline-block">
                     <div class="buttontoggle _2"></div>
                   </a>
                 </div>
                 <div class="table-box _2 action">
-                  <a data-w-id="0da7354a-0aef-12af-8114-37b1c948c341" href="#" class="link-block-12 w-inline-block"><img
-                      src="images/edit-24px.svg" alt="" class="table-action-icon"></a>
-                  <a data-w-id="0da7354a-0aef-12af-8114-37b1c948c343" href="#" class="link-block-10 w-inline-block"><img
-                      src="images/close-2.svg" alt="" class="table-action-icon-2 x"></a>
+                  <a data-w-id="49a56caf-df4a-14d9-3286-d89d44ffdda6" href="#" class="link-block-12 w-inline-block"><img
+                      src="{% static 'images/edit-24px.svg' %}" alt="" class="table-action-icon"></a>
+                  <a data-w-id="49a56caf-df4a-14d9-3286-d89d44ffdda8" href="#" class="link-block-10 w-inline-block"><img
+                      src="{% static 'images/close-2.svg' %}" alt="" class="table-action-icon-2 x"></a>
                 </div>
               </div>
               <div class="table-row">
@@ -265,16 +263,16 @@
                   <div class="table-data">100</div>
                 </div>
                 <div class="table-box _2 action">
-                  <a href="#" data-ix="toggle" data-w-id="0da7354a-0aef-12af-8114-37b1c948c35a"
+                  <a href="#" data-ix="toggle" data-w-id="49a56caf-df4a-14d9-3286-d89d44ffddbc"
                     class="togglebutton w-inline-block">
                     <div class="buttontoggle"></div>
                   </a>
                 </div>
                 <div class="table-box _2 action">
-                  <a data-w-id="0da7354a-0aef-12af-8114-37b1c948c35d" href="#" class="link-block-12 w-inline-block"><img
-                      src="images/edit-24px.svg" alt="" class="table-action-icon"></a>
-                  <a data-w-id="0da7354a-0aef-12af-8114-37b1c948c35f" href="#" class="link-block-10 w-inline-block"><img
-                      src="images/close-2.svg" alt="" class="table-action-icon-2 x"></a>
+                  <a data-w-id="49a56caf-df4a-14d9-3286-d89d44ffddbf" href="#" class="link-block-12 w-inline-block"><img
+                      src="{% static 'images/edit-24px.svg' %}" alt="" class="table-action-icon"></a>
+                  <a data-w-id="49a56caf-df4a-14d9-3286-d89d44ffddc1" href="#" class="link-block-10 w-inline-block"><img
+                      src="{% static 'images/close-2.svg' %}" alt="" class="table-action-icon-2 x"></a>
                 </div>
               </div>
               <div class="table-row">
@@ -295,16 +293,16 @@
                   <div class="table-data">100</div>
                 </div>
                 <div class="table-box _2 action">
-                  <a href="#" data-ix="toggle" data-w-id="0da7354a-0aef-12af-8114-37b1c948c376"
+                  <a href="#" data-ix="toggle" data-w-id="49a56caf-df4a-14d9-3286-d89d44ffddd5"
                     class="togglebutton w-inline-block">
                     <div class="buttontoggle"></div>
                   </a>
                 </div>
                 <div class="table-box _2 action">
-                  <a data-w-id="0da7354a-0aef-12af-8114-37b1c948c379" href="#" class="link-block-12 w-inline-block"><img
-                      src="images/edit-24px.svg" alt="" class="table-action-icon"></a>
-                  <a data-w-id="0da7354a-0aef-12af-8114-37b1c948c37b" href="#" class="link-block-10 w-inline-block"><img
-                      src="images/close-2.svg" alt="" class="table-action-icon-2 x"></a>
+                  <a data-w-id="49a56caf-df4a-14d9-3286-d89d44ffddd8" href="#" class="link-block-12 w-inline-block"><img
+                      src="{% static 'images/edit-24px.svg' %}" alt="" class="table-action-icon"></a>
+                  <a data-w-id="49a56caf-df4a-14d9-3286-d89d44ffddda" href="#" class="link-block-10 w-inline-block"><img
+                      src="{% static 'images/close-2.svg' %}" alt="" class="table-action-icon-2 x"></a>
                 </div>
               </div>
               <div class="table-row">
@@ -327,16 +325,16 @@
                   <div class="table-data">100</div>
                 </div>
                 <div class="table-box _2 action">
-                  <a href="#" data-ix="toggle" data-w-id="0da7354a-0aef-12af-8114-37b1c948c392"
+                  <a href="#" data-ix="toggle" data-w-id="49a56caf-df4a-14d9-3286-d89d44ffddf0"
                     class="togglebutton active w-inline-block">
                     <div class="buttontoggle _2"></div>
                   </a>
                 </div>
                 <div class="table-box _2 action">
-                  <a data-w-id="0da7354a-0aef-12af-8114-37b1c948c395" href="#" class="link-block-12 w-inline-block"><img
-                      src="images/edit-24px.svg" alt="" class="table-action-icon"></a>
-                  <a data-w-id="0da7354a-0aef-12af-8114-37b1c948c397" href="#" class="link-block-10 w-inline-block"><img
-                      src="images/close-2.svg" alt="" class="table-action-icon-2 x"></a>
+                  <a data-w-id="49a56caf-df4a-14d9-3286-d89d44ffddf3" href="#" class="link-block-12 w-inline-block"><img
+                      src="{% static 'images/edit-24px.svg' %}" alt="" class="table-action-icon"></a>
+                  <a data-w-id="49a56caf-df4a-14d9-3286-d89d44ffddf5" href="#" class="link-block-10 w-inline-block"><img
+                      src="{% static 'images/close-2.svg' %}" alt="" class="table-action-icon-2 x"></a>
                 </div>
               </div>
               <div class="table-row">
@@ -359,16 +357,16 @@
                   <div class="table-data">100</div>
                 </div>
                 <div class="table-box _2 action">
-                  <a href="#" data-ix="toggle" data-w-id="0da7354a-0aef-12af-8114-37b1c948c3ae"
+                  <a href="#" data-ix="toggle" data-w-id="49a56caf-df4a-14d9-3286-d89d44ffde0b"
                     class="togglebutton active w-inline-block">
                     <div class="buttontoggle _2"></div>
                   </a>
                 </div>
                 <div class="table-box _2 action">
-                  <a data-w-id="0da7354a-0aef-12af-8114-37b1c948c3b1" href="#" class="link-block-12 w-inline-block"><img
-                      src="images/edit-24px.svg" alt="" class="table-action-icon"></a>
-                  <a data-w-id="0da7354a-0aef-12af-8114-37b1c948c3b3" href="#" class="link-block-10 w-inline-block"><img
-                      src="images/close-2.svg" alt="" class="table-action-icon-2 x"></a>
+                  <a data-w-id="49a56caf-df4a-14d9-3286-d89d44ffde0e" href="#" class="link-block-12 w-inline-block"><img
+                      src="{% static 'images/edit-24px.svg' %}" alt="" class="table-action-icon"></a>
+                  <a data-w-id="49a56caf-df4a-14d9-3286-d89d44ffde10" href="#" class="link-block-10 w-inline-block"><img
+                      src="{% static 'images/close-2.svg' %}" alt="" class="table-action-icon-2 x"></a>
                 </div>
               </div>
               <div class="table-row">
@@ -391,16 +389,16 @@
                   <div class="table-data">100</div>
                 </div>
                 <div class="table-box _2 action">
-                  <a href="#" data-ix="toggle" data-w-id="0da7354a-0aef-12af-8114-37b1c948c3ca"
+                  <a href="#" data-ix="toggle" data-w-id="49a56caf-df4a-14d9-3286-d89d44ffde26"
                     class="togglebutton active w-inline-block">
                     <div class="buttontoggle _2"></div>
                   </a>
                 </div>
                 <div class="table-box _2 action">
-                  <a data-w-id="0da7354a-0aef-12af-8114-37b1c948c3cd" href="#" class="link-block-12 w-inline-block"><img
-                      src="images/edit-24px.svg" alt="" class="table-action-icon"></a>
-                  <a data-w-id="0da7354a-0aef-12af-8114-37b1c948c3cf" href="#" class="link-block-10 w-inline-block"><img
-                      src="images/close-2.svg" alt="" class="table-action-icon-2 x"></a>
+                  <a data-w-id="49a56caf-df4a-14d9-3286-d89d44ffde29" href="#" class="link-block-12 w-inline-block"><img
+                      src="{% static 'images/edit-24px.svg' %}" alt="" class="table-action-icon"></a>
+                  <a data-w-id="49a56caf-df4a-14d9-3286-d89d44ffde2b" href="#" class="link-block-10 w-inline-block"><img
+                      src="{% static 'images/close-2.svg' %}" alt="" class="table-action-icon-2 x"></a>
                 </div>
               </div>
               <div class="table-row">
@@ -421,16 +419,16 @@
                   <div class="table-data">100</div>
                 </div>
                 <div class="table-box _2 action">
-                  <a href="#" data-ix="toggle" data-w-id="0da7354a-0aef-12af-8114-37b1c948c3e6"
+                  <a href="#" data-ix="toggle" data-w-id="49a56caf-df4a-14d9-3286-d89d44ffde3f"
                     class="togglebutton w-inline-block">
                     <div class="buttontoggle"></div>
                   </a>
                 </div>
                 <div class="table-box _2 action">
-                  <a data-w-id="0da7354a-0aef-12af-8114-37b1c948c3e9" href="#" class="link-block-12 w-inline-block"><img
-                      src="images/edit-24px.svg" alt="" class="table-action-icon"></a>
-                  <a data-w-id="0da7354a-0aef-12af-8114-37b1c948c3eb" href="#" class="link-block-10 w-inline-block"><img
-                      src="images/close-2.svg" alt="" class="table-action-icon-2 x"></a>
+                  <a data-w-id="49a56caf-df4a-14d9-3286-d89d44ffde42" href="#" class="link-block-12 w-inline-block"><img
+                      src="{% static 'images/edit-24px.svg' %}" alt="" class="table-action-icon"></a>
+                  <a data-w-id="49a56caf-df4a-14d9-3286-d89d44ffde44" href="#" class="link-block-10 w-inline-block"><img
+                      src="{% static 'images/close-2.svg' %}" alt="" class="table-action-icon-2 x"></a>
                 </div>
               </div>
             </div>
@@ -439,13 +437,13 @@
       </div>
       <div class="table-details-box">
         <div class="div-block-412">
-          <div class="div-block-410"><img src="images/next.svg" alt="" class="table-arrows _2"><img
-              src="images/next-1.svg" alt="" class="table-arrows _2"></div>
+          <div class="div-block-410"><img src="{% static 'images/next.svg' %}" alt="" class="table-arrows _2"><img
+              src="{% static 'images/next-1.svg' %}" alt="" class="table-arrows _2"></div>
           <div class="div-block-411">
             <div>Page <span class="text-span">1</span> of 10</div>
           </div>
-          <div class="div-block-410"><img src="images/next-1.svg" alt="" class="table-arrows"><img src="images/next.svg"
-              alt="" class="table-arrows"></div>
+          <div class="div-block-410"><img src="{% static 'images/next-1.svg' %}" alt="" class="table-arrows"><img
+              src="{% static 'images/next.svg' %}" alt="" class="table-arrows"></div>
         </div>
       </div>
     </div>
