@@ -130,7 +130,7 @@
           <div class="table-heading">Stock</div>
         </div>
         <div class="table-box action">
-          <div class="table-heading">Status</div>
+          <div class="table-heading">Active</div>
         </div>
         <div class="table-box action">
           <div class="table-heading">Action</div>
@@ -140,26 +140,30 @@
         <div class="table-data-wrapper">
           <div class="scroll-container">
             <div class="scroll-table-content">
+              {% for product in products %}
               <div class="table-row">
                 <div class="table-header _2">
                   <div class="table-row-nr">1</div>
                 </div>
-                <div class="table-box _2"><img
-                    src="{% static 'images/5dd1ca04edfe6a591970a2cd_face-chad_15dd1ca04edfe6a591970a2cd_face-chad.jpg' %}"
-                    width="32" alt="" class="image-7">
-                  <div class="table-data name">USB 32GB 2.0 </div>
+                <div class="table-box _2">
+                  {% if product.image %}
+                  <img src="{{ product.image.url }}" width="32" alt="" class="image-7">
+                  {% else %}
+                  <p>No image</p>
+                  {% endif %}
+                  <div class="table-data name">{{ product.name }} </div>
                 </div>
                 <div class="table-box _2">
-                  <a href="#" class="table-data link">VERBATIM</a>
+                  <a href="#" class="table-data link">{{ product.category }}</a>
                 </div>
                 <div class="table-box _2">
-                  <div class="table-data">023942987482</div>
+                  <div class="table-data">{{ product.barcodes }}</div>
                 </div>
                 <div class="table-box _2">
-                  <div class="table-data">SAPDE</div>
+                  <div class="table-data">{{ product.location }}</div>
                 </div>
                 <div class="table-box _2 small">
-                  <div class="table-data">100</div>
+                  <div class="table-data">{{ product.quantity }}</div>
                 </div>
                 <div class="table-box _2 action">
                   <a href="#" data-ix="toggle" data-w-id="fb925edc-a920-2bd7-9996-e52069308c63"
@@ -175,304 +179,7 @@
                       src="{% static 'images/close-2.svg' %}" alt="" class="table-action-icon-2 x"></a>
                 </div>
               </div>
-              <div class="table-row">
-                <div class="table-header _2">
-                  <div class="table-row-nr">2</div>
-                </div>
-                <div class="table-box _2"><img
-                    src="{% static 'images/5dd1ca04edfe6a591970a2cd_face-chad_15dd1ca04edfe6a591970a2cd_face-chad.jpg' %}"
-                    width="32" alt="" class="image-7">
-                  <div class="table-data name">USB 32GB 2.0 </div>
-                </div>
-                <div class="table-box _2">
-                  <a href="#" class="table-data link">VERBATIM</a>
-                </div>
-                <div class="table-box _2">
-                  <div class="table-data">023942987482</div>
-                </div>
-                <div class="table-box _2">
-                  <div class="table-data">SAPDE</div>
-                </div>
-                <div class="table-box _2 small">
-                  <div class="table-data">100</div>
-                </div>
-                <div class="table-box _2 action">
-                  <a href="#" data-ix="toggle" data-w-id="fb925edc-a920-2bd7-9996-e52069308c7e"
-                    class="togglebutton active w-inline-block">
-                    <div class="buttontoggle _2"></div>
-                  </a>
-                </div>
-                <div class="table-box _2 action">
-                  <a data-w-id="fb925edc-a920-2bd7-9996-e52069308c81" href="#" class="link-block-12 w-inline-block"><img
-                      src="{% static 'images/edit-24px.svg' %}" alt="" class="table-action-icon"></a>
-                  <a data-w-id="fb925edc-a920-2bd7-9996-e52069308c83" href="#" class="link-block-10 w-inline-block"><img
-                      src="{% static 'images/close-2.svg' %}" alt="" class="table-action-icon-2 x"></a>
-                </div>
-              </div>
-              <div class="table-row">
-                <div class="table-header _2">
-                  <div class="table-row-nr">3</div>
-                </div>
-                <div class="table-box _2"><img
-                    src="{% static 'images/5dd1ca04edfe6a591970a2cd_face-chad_15dd1ca04edfe6a591970a2cd_face-chad.jpg' %}"
-                    width="32" alt="" class="image-7">
-                  <div class="table-data name">USB 32GB 2.0 </div>
-                </div>
-                <div class="table-box _2">
-                  <a href="#" class="table-data link">VERBATIM</a>
-                </div>
-                <div class="table-box _2"></div>
-                <div class="table-box _2">
-                  <div class="table-data">SAPDE</div>
-                </div>
-                <div class="table-box _2 small">
-                  <div class="table-data">100</div>
-                </div>
-                <div class="table-box _2 action">
-                  <a href="#" data-ix="toggle" data-w-id="fb925edc-a920-2bd7-9996-e52069308c97"
-                    class="togglebutton w-inline-block">
-                    <div class="buttontoggle"></div>
-                  </a>
-                </div>
-                <div class="table-box _2 action">
-                  <a data-w-id="fb925edc-a920-2bd7-9996-e52069308c9a" href="#" class="link-block-12 w-inline-block"><img
-                      src="{% static 'images/edit-24px.svg' %}" alt="" class="table-action-icon"></a>
-                  <a data-w-id="fb925edc-a920-2bd7-9996-e52069308c9c" href="#" class="link-block-10 w-inline-block"><img
-                      src="{% static 'images/close-2.svg' %}" alt="" class="table-action-icon-2 x"></a>
-                </div>
-              </div>
-              <div class="table-row">
-                <div class="table-header _2">
-                  <div class="table-row-nr">4</div>
-                </div>
-                <div class="table-box _2"><img
-                    src="{% static 'images/5dd1ca04edfe6a591970a2cd_face-chad_15dd1ca04edfe6a591970a2cd_face-chad.jpg' %}"
-                    width="32" alt="" class="image-7">
-                  <div class="table-data name">USB 32GB 2.0 </div>
-                </div>
-                <div class="table-box _2">
-                  <a href="#" class="table-data link">VERBATIM</a>
-                </div>
-                <div class="table-box _2">
-                  <div class="table-data">023942987482</div>
-                </div>
-                <div class="table-box _2">
-                  <div class="table-data">SAPDE</div>
-                </div>
-                <div class="table-box _2 small">
-                  <div class="table-data">100</div>
-                </div>
-                <div class="table-box _2 action">
-                  <a href="#" data-ix="toggle" data-w-id="fb925edc-a920-2bd7-9996-e52069308cb2"
-                    class="togglebutton active w-inline-block">
-                    <div class="buttontoggle _2"></div>
-                  </a>
-                </div>
-                <div class="table-box _2 action">
-                  <a data-w-id="fb925edc-a920-2bd7-9996-e52069308cb5" href="#" class="link-block-12 w-inline-block"><img
-                      src="{% static 'images/edit-24px.svg' %}" alt="" class="table-action-icon"></a>
-                  <a data-w-id="fb925edc-a920-2bd7-9996-e52069308cb7" href="#" class="link-block-10 w-inline-block"><img
-                      src="{% static 'images/close-2.svg' %}" alt="" class="table-action-icon-2 x"></a>
-                </div>
-              </div>
-              <div class="table-row">
-                <div class="table-header _2">
-                  <div class="table-row-nr">5</div>
-                </div>
-                <div class="table-box _2"><img
-                    src="{% static 'images/5dd1ca04edfe6a591970a2cd_face-chad_15dd1ca04edfe6a591970a2cd_face-chad.jpg' %}"
-                    width="32" alt="" class="image-7">
-                  <div class="table-data name">USB 32GB 2.0 </div>
-                </div>
-                <div class="table-box _2">
-                  <a href="#" class="table-data link">VERBATIM</a>
-                </div>
-                <div class="table-box _2"></div>
-                <div class="table-box _2">
-                  <div class="table-data">SAPDE</div>
-                </div>
-                <div class="table-box _2 small">
-                  <div class="table-data">100</div>
-                </div>
-                <div class="table-box _2 action">
-                  <a href="#" data-ix="toggle" data-w-id="fb925edc-a920-2bd7-9996-e52069308ccb"
-                    class="togglebutton w-inline-block">
-                    <div class="buttontoggle"></div>
-                  </a>
-                </div>
-                <div class="table-box _2 action">
-                  <a data-w-id="fb925edc-a920-2bd7-9996-e52069308cce" href="#" class="link-block-12 w-inline-block"><img
-                      src="{% static 'images/edit-24px.svg' %}" alt="" class="table-action-icon"></a>
-                  <a data-w-id="fb925edc-a920-2bd7-9996-e52069308cd0" href="#" class="link-block-10 w-inline-block"><img
-                      src="{% static 'images/close-2.svg' %}" alt="" class="table-action-icon-2 x"></a>
-                </div>
-              </div>
-              <div class="table-row">
-                <div class="table-header _2">
-                  <div class="table-row-nr">6</div>
-                </div>
-                <div class="table-box _2"><img
-                    src="{% static 'images/5dd1ca04edfe6a591970a2cd_face-chad_15dd1ca04edfe6a591970a2cd_face-chad.jpg' %}"
-                    width="32" alt="" class="image-7">
-                  <div class="table-data name">USB 32GB 2.0 </div>
-                </div>
-                <div class="table-box _2">
-                  <a href="#" class="table-data link">VERBATIM</a>
-                </div>
-                <div class="table-box _2"></div>
-                <div class="table-box _2">
-                  <div class="table-data">SAPDE</div>
-                </div>
-                <div class="table-box _2 small">
-                  <div class="table-data">100</div>
-                </div>
-                <div class="table-box _2 action">
-                  <a href="#" data-ix="toggle" data-w-id="fb925edc-a920-2bd7-9996-e52069308ce5"
-                    class="togglebutton w-inline-block">
-                    <div class="buttontoggle"></div>
-                  </a>
-                </div>
-                <div class="table-box _2 action">
-                  <a data-w-id="fb925edc-a920-2bd7-9996-e52069308ce8" href="#" class="link-block-12 w-inline-block"><img
-                      src="{% static 'images/edit-24px.svg' %}" alt="" class="table-action-icon"></a>
-                  <a data-w-id="fb925edc-a920-2bd7-9996-e52069308cea" href="#" class="link-block-10 w-inline-block"><img
-                      src="{% static 'images/close-2.svg' %}" alt="" class="table-action-icon-2 x"></a>
-                </div>
-              </div>
-              <div class="table-row">
-                <div class="table-header _2">
-                  <div class="table-row-nr">7</div>
-                </div>
-                <div class="table-box _2"><img
-                    src="{% static 'images/5dd1ca04edfe6a591970a2cd_face-chad_15dd1ca04edfe6a591970a2cd_face-chad.jpg' %}"
-                    width="32" alt="" class="image-7">
-                  <div class="table-data name">USB 32GB 2.0 </div>
-                </div>
-                <div class="table-box _2">
-                  <a href="#" class="table-data link">VERBATIM</a>
-                </div>
-                <div class="table-box _2">
-                  <div class="table-data">023942987482</div>
-                </div>
-                <div class="table-box _2">
-                  <div class="table-data">SAPDE</div>
-                </div>
-                <div class="table-box _2 small">
-                  <div class="table-data">100</div>
-                </div>
-                <div class="table-box _2 action">
-                  <a href="#" data-ix="toggle" data-w-id="fb925edc-a920-2bd7-9996-e52069308d00"
-                    class="togglebutton active w-inline-block">
-                    <div class="buttontoggle _2"></div>
-                  </a>
-                </div>
-                <div class="table-box _2 action">
-                  <a data-w-id="fb925edc-a920-2bd7-9996-e52069308d03" href="#" class="link-block-12 w-inline-block"><img
-                      src="{% static 'images/edit-24px.svg' %}" alt="" class="table-action-icon"></a>
-                  <a data-w-id="fb925edc-a920-2bd7-9996-e52069308d05" href="#" class="link-block-10 w-inline-block"><img
-                      src="{% static 'images/close-2.svg' %}" alt="" class="table-action-icon-2 x"></a>
-                </div>
-              </div>
-              <div class="table-row">
-                <div class="table-header _2">
-                  <div class="table-row-nr">8</div>
-                </div>
-                <div class="table-box _2"><img
-                    src="{% static 'images/5dd1ca04edfe6a591970a2cd_face-chad_15dd1ca04edfe6a591970a2cd_face-chad.jpg' %}"
-                    width="32" alt="" class="image-7">
-                  <div class="table-data name">USB 32GB 2.0 </div>
-                </div>
-                <div class="table-box _2">
-                  <a href="#" class="table-data link">VERBATIM</a>
-                </div>
-                <div class="table-box _2">
-                  <div class="table-data">023942987482</div>
-                </div>
-                <div class="table-box _2">
-                  <div class="table-data">SAPDE</div>
-                </div>
-                <div class="table-box _2 small">
-                  <div class="table-data">100</div>
-                </div>
-                <div class="table-box _2 action">
-                  <a href="#" data-ix="toggle" data-w-id="fb925edc-a920-2bd7-9996-e52069308d1b"
-                    class="togglebutton active w-inline-block">
-                    <div class="buttontoggle _2"></div>
-                  </a>
-                </div>
-                <div class="table-box _2 action">
-                  <a data-w-id="fb925edc-a920-2bd7-9996-e52069308d1e" href="#" class="link-block-12 w-inline-block"><img
-                      src="{% static 'images/edit-24px.svg' %}" alt="" class="table-action-icon"></a>
-                  <a data-w-id="fb925edc-a920-2bd7-9996-e52069308d20" href="#" class="link-block-10 w-inline-block"><img
-                      src="{% static 'images/close-2.svg' %}" alt="" class="table-action-icon-2 x"></a>
-                </div>
-              </div>
-              <div class="table-row">
-                <div class="table-header _2">
-                  <div class="table-row-nr">9</div>
-                </div>
-                <div class="table-box _2"><img
-                    src="{% static 'images/5dd1ca04edfe6a591970a2cd_face-chad_15dd1ca04edfe6a591970a2cd_face-chad.jpg' %}"
-                    width="32" alt="" class="image-7">
-                  <div class="table-data name">USB 32GB 2.0 </div>
-                </div>
-                <div class="table-box _2">
-                  <a href="#" class="table-data link">VERBATIM</a>
-                </div>
-                <div class="table-box _2">
-                  <div class="table-data">023942987482</div>
-                </div>
-                <div class="table-box _2">
-                  <div class="table-data">SAPDE</div>
-                </div>
-                <div class="table-box _2 small">
-                  <div class="table-data">100</div>
-                </div>
-                <div class="table-box _2 action">
-                  <a href="#" data-ix="toggle" data-w-id="fb925edc-a920-2bd7-9996-e52069308d36"
-                    class="togglebutton active w-inline-block">
-                    <div class="buttontoggle _2"></div>
-                  </a>
-                </div>
-                <div class="table-box _2 action">
-                  <a data-w-id="fb925edc-a920-2bd7-9996-e52069308d39" href="#" class="link-block-12 w-inline-block"><img
-                      src="{% static 'images/edit-24px.svg' %}" alt="" class="table-action-icon"></a>
-                  <a data-w-id="fb925edc-a920-2bd7-9996-e52069308d3b" href="#" class="link-block-10 w-inline-block"><img
-                      src="{% static 'images/close-2.svg' %}" alt="" class="table-action-icon-2 x"></a>
-                </div>
-              </div>
-              <div class="table-row">
-                <div class="table-header _2">
-                  <div class="table-row-nr">10</div>
-                </div>
-                <div class="table-box _2"><img
-                    src="{% static 'images/5dd1ca04edfe6a591970a2cd_face-chad_15dd1ca04edfe6a591970a2cd_face-chad.jpg' %}"
-                    width="32" alt="" class="image-7">
-                  <div class="table-data name">USB 32GB 2.0 </div>
-                </div>
-                <div class="table-box _2">
-                  <a href="#" class="table-data link">VERBATIM</a>
-                </div>
-                <div class="table-box _2"></div>
-                <div class="table-box _2">
-                  <div class="table-data">SAPDE</div>
-                </div>
-                <div class="table-box _2 small">
-                  <div class="table-data">100</div>
-                </div>
-                <div class="table-box _2 action">
-                  <a href="#" data-ix="toggle" data-w-id="fb925edc-a920-2bd7-9996-e52069308d4f"
-                    class="togglebutton w-inline-block">
-                    <div class="buttontoggle"></div>
-                  </a>
-                </div>
-                <div class="table-box _2 action">
-                  <a data-w-id="fb925edc-a920-2bd7-9996-e52069308d52" href="#" class="link-block-12 w-inline-block"><img
-                      src="{% static 'images/edit-24px.svg' %}" alt="" class="table-action-icon"></a>
-                  <a data-w-id="fb925edc-a920-2bd7-9996-e52069308d54" href="#" class="link-block-10 w-inline-block"><img
-                      src="{% static 'images/close-2.svg' %}" alt="" class="table-action-icon-2 x"></a>
-                </div>
-              </div>
+              {% endfor %}
             </div>
           </div>
         </div>

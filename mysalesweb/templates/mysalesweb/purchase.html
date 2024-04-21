@@ -24,14 +24,14 @@
     data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="header-wrapper w-nav">
     <div class="container-default w-container">
       <div class="header-content-wrapper">
-        <a href="{% url 'index' %}" aria-current="page" class="header-logo-link w-nav-brand w--current"><img
+        <a href="{% url 'index' %}" class="header-logo-link w-nav-brand"><img
             src="https://uploads-ssl.webflow.com/63d309d5831cc7bd8997129f/63d309d5831cc7230a9712f9_placeholder-logo-webflow-template-brix-templates.svg"
             alt="" class="header-logo"></a>
         <div class="header-right-side">
           <nav role="navigation" class="header-nav-menu-wrapper w-nav-menu">
             <ul role="list" class="header-nav-menu-list">
               <li class="header-nav-list-item">
-                <a href="{% url 'index' %}" aria-current="page" class="header-nav-link w-nav-link w--current">Home</a>
+                <a href="{% url 'index' %}" class="header-nav-link w-nav-link">Home</a>
               </li>
               <li class="header-nav-list-item">
                 <a href="{% url 'product' %}" class="header-nav-link w-nav-link">Product</a>
@@ -58,7 +58,8 @@
                 </div>
               </li>
               <li class="header-nav-list-item">
-                <a href="{% url 'purchase' %}" class="header-nav-link w-nav-link">Purchase</a>
+                <a href="{% url 'purchase' %}" aria-current="page"
+                  class="header-nav-link w-nav-link w--current">Purchase</a>
               </li>
               <li class="header-nav-list-item">
                 <a href="{% url 'customer' %}" target="_blank" class="header-nav-link w-nav-link">Customer</a>
@@ -85,8 +86,8 @@
         <h1 class="heading-title">Customer</h1>
         <form action="/search" class="search saved-shortlists w-form"><input class="search-input w-input"
             maxlength="256" name="query" placeholder="Search..." type="search" id="search" required=""><input
-            type="submit" class="search-button _2 w-button" value="Search"><img src="{% static 'images/search.svg' %}"
-            alt="" class="search-icon"></form>
+            type="submit" class="search-button _2 w-button" value="Search"><img src="images/search.svg" alt=""
+            class="search-icon"></form>
         <a href="{% url 'purchaseAdd' %}" target="_blank" class="add-button w-button">Add</a>
       </div>
     </div>
@@ -119,6 +120,30 @@
         <div class="table-data-wrapper">
           <div class="scroll-container">
             <div class="scroll-table-content">
+              <div class="table-row head hide">
+                <div class="table-header"></div>
+                <div class="table-box">
+                  <div class="table-heading">Name</div>
+                </div>
+                <div class="table-box">
+                  <div class="table-heading">Email</div>
+                </div>
+                <div class="table-box">
+                  <div class="table-heading">Phone</div>
+                </div>
+                <div class="table-box">
+                  <div class="table-heading">Country</div>
+                </div>
+                <div class="table-box _11">
+                  <div class="table-heading">Last Update</div>
+                </div>
+                <div class="table-box action">
+                  <div class="table-heading">Status</div>
+                </div>
+                <div class="table-box action">
+                  <div class="table-heading">Action</div>
+                </div>
+              </div>
               <div class="table-row">
                 <div class="table-header _2">
                   <div class="table-row-nr">1</div>
@@ -146,9 +171,9 @@
                 </div>
                 <div class="table-box _2 action">
                   <a data-w-id="49a56caf-df4a-14d9-3286-d89d44ffdd57" href="#" class="link-block-12 w-inline-block"><img
-                      src="{% static 'images/edit-24px.svg' %}" alt="" class="table-action-icon"></a>
+                      src="images/edit-24px.svg" alt="" class="table-action-icon"></a>
                   <a data-w-id="49a56caf-df4a-14d9-3286-d89d44ffdd59" href="#" class="link-block-10 w-inline-block"><img
-                      src="{% static 'images/close-2.svg' %}" alt="" class="table-action-icon-2 x"></a>
+                      src="images/close-2.svg" alt="" class="table-action-icon-2 x"></a>
                 </div>
               </div>
               <div class="table-row">
@@ -178,9 +203,9 @@
                 </div>
                 <div class="table-box _2 action">
                   <a data-w-id="49a56caf-df4a-14d9-3286-d89d44ffdd72" href="#" class="link-block-12 w-inline-block"><img
-                      src="{% static 'images/edit-24px.svg' %}" alt="" class="table-action-icon"></a>
+                      src="images/edit-24px.svg" alt="" class="table-action-icon"></a>
                   <a data-w-id="49a56caf-df4a-14d9-3286-d89d44ffdd74" href="#" class="link-block-10 w-inline-block"><img
-                      src="{% static 'images/close-2.svg' %}" alt="" class="table-action-icon-2 x"></a>
+                      src="images/close-2.svg" alt="" class="table-action-icon-2 x"></a>
                 </div>
               </div>
               <div class="table-row">
@@ -208,9 +233,9 @@
                 </div>
                 <div class="table-box _2 action">
                   <a data-w-id="49a56caf-df4a-14d9-3286-d89d44ffdd8b" href="#" class="link-block-12 w-inline-block"><img
-                      src="{% static 'images/edit-24px.svg' %}" alt="" class="table-action-icon"></a>
+                      src="images/edit-24px.svg" alt="" class="table-action-icon"></a>
                   <a data-w-id="49a56caf-df4a-14d9-3286-d89d44ffdd8d" href="#" class="link-block-10 w-inline-block"><img
-                      src="{% static 'images/close-2.svg' %}" alt="" class="table-action-icon-2 x"></a>
+                      src="images/close-2.svg" alt="" class="table-action-icon-2 x"></a>
                 </div>
               </div>
               <div class="table-row">
@@ -240,9 +265,9 @@
                 </div>
                 <div class="table-box _2 action">
                   <a data-w-id="49a56caf-df4a-14d9-3286-d89d44ffdda6" href="#" class="link-block-12 w-inline-block"><img
-                      src="{% static 'images/edit-24px.svg' %}" alt="" class="table-action-icon"></a>
+                      src="images/edit-24px.svg" alt="" class="table-action-icon"></a>
                   <a data-w-id="49a56caf-df4a-14d9-3286-d89d44ffdda8" href="#" class="link-block-10 w-inline-block"><img
-                      src="{% static 'images/close-2.svg' %}" alt="" class="table-action-icon-2 x"></a>
+                      src="images/close-2.svg" alt="" class="table-action-icon-2 x"></a>
                 </div>
               </div>
               <div class="table-row">
@@ -270,9 +295,9 @@
                 </div>
                 <div class="table-box _2 action">
                   <a data-w-id="49a56caf-df4a-14d9-3286-d89d44ffddbf" href="#" class="link-block-12 w-inline-block"><img
-                      src="{% static 'images/edit-24px.svg' %}" alt="" class="table-action-icon"></a>
+                      src="images/edit-24px.svg" alt="" class="table-action-icon"></a>
                   <a data-w-id="49a56caf-df4a-14d9-3286-d89d44ffddc1" href="#" class="link-block-10 w-inline-block"><img
-                      src="{% static 'images/close-2.svg' %}" alt="" class="table-action-icon-2 x"></a>
+                      src="images/close-2.svg" alt="" class="table-action-icon-2 x"></a>
                 </div>
               </div>
               <div class="table-row">
@@ -300,9 +325,9 @@
                 </div>
                 <div class="table-box _2 action">
                   <a data-w-id="49a56caf-df4a-14d9-3286-d89d44ffddd8" href="#" class="link-block-12 w-inline-block"><img
-                      src="{% static 'images/edit-24px.svg' %}" alt="" class="table-action-icon"></a>
+                      src="images/edit-24px.svg" alt="" class="table-action-icon"></a>
                   <a data-w-id="49a56caf-df4a-14d9-3286-d89d44ffddda" href="#" class="link-block-10 w-inline-block"><img
-                      src="{% static 'images/close-2.svg' %}" alt="" class="table-action-icon-2 x"></a>
+                      src="images/close-2.svg" alt="" class="table-action-icon-2 x"></a>
                 </div>
               </div>
               <div class="table-row">
@@ -332,9 +357,9 @@
                 </div>
                 <div class="table-box _2 action">
                   <a data-w-id="49a56caf-df4a-14d9-3286-d89d44ffddf3" href="#" class="link-block-12 w-inline-block"><img
-                      src="{% static 'images/edit-24px.svg' %}" alt="" class="table-action-icon"></a>
+                      src="images/edit-24px.svg" alt="" class="table-action-icon"></a>
                   <a data-w-id="49a56caf-df4a-14d9-3286-d89d44ffddf5" href="#" class="link-block-10 w-inline-block"><img
-                      src="{% static 'images/close-2.svg' %}" alt="" class="table-action-icon-2 x"></a>
+                      src="images/close-2.svg" alt="" class="table-action-icon-2 x"></a>
                 </div>
               </div>
               <div class="table-row">
@@ -364,9 +389,9 @@
                 </div>
                 <div class="table-box _2 action">
                   <a data-w-id="49a56caf-df4a-14d9-3286-d89d44ffde0e" href="#" class="link-block-12 w-inline-block"><img
-                      src="{% static 'images/edit-24px.svg' %}" alt="" class="table-action-icon"></a>
+                      src="images/edit-24px.svg" alt="" class="table-action-icon"></a>
                   <a data-w-id="49a56caf-df4a-14d9-3286-d89d44ffde10" href="#" class="link-block-10 w-inline-block"><img
-                      src="{% static 'images/close-2.svg' %}" alt="" class="table-action-icon-2 x"></a>
+                      src="images/close-2.svg" alt="" class="table-action-icon-2 x"></a>
                 </div>
               </div>
               <div class="table-row">
@@ -396,9 +421,9 @@
                 </div>
                 <div class="table-box _2 action">
                   <a data-w-id="49a56caf-df4a-14d9-3286-d89d44ffde29" href="#" class="link-block-12 w-inline-block"><img
-                      src="{% static 'images/edit-24px.svg' %}" alt="" class="table-action-icon"></a>
+                      src="images/edit-24px.svg" alt="" class="table-action-icon"></a>
                   <a data-w-id="49a56caf-df4a-14d9-3286-d89d44ffde2b" href="#" class="link-block-10 w-inline-block"><img
-                      src="{% static 'images/close-2.svg' %}" alt="" class="table-action-icon-2 x"></a>
+                      src="images/close-2.svg" alt="" class="table-action-icon-2 x"></a>
                 </div>
               </div>
               <div class="table-row">
@@ -426,9 +451,9 @@
                 </div>
                 <div class="table-box _2 action">
                   <a data-w-id="49a56caf-df4a-14d9-3286-d89d44ffde42" href="#" class="link-block-12 w-inline-block"><img
-                      src="{% static 'images/edit-24px.svg' %}" alt="" class="table-action-icon"></a>
+                      src="images/edit-24px.svg" alt="" class="table-action-icon"></a>
                   <a data-w-id="49a56caf-df4a-14d9-3286-d89d44ffde44" href="#" class="link-block-10 w-inline-block"><img
-                      src="{% static 'images/close-2.svg' %}" alt="" class="table-action-icon-2 x"></a>
+                      src="images/close-2.svg" alt="" class="table-action-icon-2 x"></a>
                 </div>
               </div>
             </div>
@@ -437,13 +462,13 @@
       </div>
       <div class="table-details-box">
         <div class="div-block-412">
-          <div class="div-block-410"><img src="{% static 'images/next.svg' %}" alt="" class="table-arrows _2"><img
-              src="{% static 'images/next-1.svg' %}" alt="" class="table-arrows _2"></div>
+          <div class="div-block-410"><img src="images/next.svg" alt="" class="table-arrows _2"><img
+              src="images/next-1.svg" alt="" class="table-arrows _2"></div>
           <div class="div-block-411">
             <div>Page <span class="text-span">1</span> of 10</div>
           </div>
-          <div class="div-block-410"><img src="{% static 'images/next-1.svg' %}" alt="" class="table-arrows"><img
-              src="{% static 'images/next.svg' %}" alt="" class="table-arrows"></div>
+          <div class="div-block-410"><img src="images/next-1.svg" alt="" class="table-arrows"><img src="images/next.svg"
+              alt="" class="table-arrows"></div>
         </div>
       </div>
     </div>
