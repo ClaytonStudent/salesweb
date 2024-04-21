@@ -1,0 +1,93 @@
+{% load static %}
+<!DOCTYPE html><!--  This site was created in Webflow. https://www.webflow.com  -->
+<!--  Last Published: Wed Apr 03 2024 14:34:45 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="66042299f8679b3f134eaa94" data-wf-site="66042299f8679b3f134eaa55">
+
+<head>
+    <meta charset="utf-8">
+    <title>Shaohang&#x27;s Awesome Site</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="Webflow" name="generator">
+    <link href="{% static 'css/normalize.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'css/webflow.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'css/shaohang.css' %}" rel="stylesheet" type="text/css">
+    <script
+        type="text/javascript">!function (o, c) { var n = c.documentElement, t = " w-mod-"; n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch") }(window, document);</script>
+    <link href="{% static 'images/favicon.ico' %}" rel="shortcut icon" type="image/x-icon">
+    <link href="{% static 'images/webclip.png' %}" rel="apple-touch-icon">
+</head>
+
+<body>
+    <div data-w-id="e870c07e-1dde-3e44-661e-91801a3d3ab8" data-animation="default" data-collapse="medium"
+        data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="header-wrapper w-nav">
+        <div class="container-default w-container">
+            <div class="header-content-wrapper">
+                <a href="{% url 'index' %}" class="header-logo-link w-nav-brand"><img
+                        src="https://uploads-ssl.webflow.com/63d309d5831cc7bd8997129f/63d309d5831cc7230a9712f9_placeholder-logo-webflow-template-brix-templates.svg"
+                        alt="" class="header-logo"></a>
+                <div class="header-right-side">
+                    <nav role="navigation" class="header-nav-menu-wrapper w-nav-menu">
+                        <ul role="list" class="header-nav-menu-list">
+                            <li class="header-nav-list-item">
+                                <a href="{% url 'index' %}" aria-current="page"
+                                    class="header-nav-link w-nav-link w--current">Home</a>
+                            </li>
+                            <li class="header-nav-list-item">
+                                <a href="{% url 'showproduct' %}" class="header-nav-link w-nav-link">Product</a>
+                            </li>
+                            <li class="header-nav-list-item">
+                                <div data-hover="true" data-delay="0" data-w-id="e870c07e-1dde-3e44-661e-91801a3d3ac7"
+                                    class="dropdown-wrapper w-dropdown">
+                                    <div class="dropdown-toggle w-dropdown-toggle">
+                                        <div>Order</div>
+                                        <div class="line-rounded-icon dropdown-arrow">↓</div>
+                                    </div>
+                                    <nav class="dropdown-column-wrapper w-dropdown-list">
+                                        <div class="dropdown-pd">
+                                            <div class="w-layout-grid grid-1-column dropdown-link-column">
+                                                <a href="#" class="dropdown-link w-dropdown-link">Mobile app</a>
+                                                <a href="#" class="dropdown-link w-dropdown-link">Desktop app</a>
+                                                <a href="#" class="dropdown-link w-dropdown-link">Multiple users</a>
+                                                <a href="#" class="dropdown-link w-dropdown-link">Integrations</a>
+                                                <a href="#" class="dropdown-link w-dropdown-link">Monthly reports</a>
+                                                <a href="#" class="dropdown-link w-dropdown-link">Granular
+                                                    permissions</a>
+                                            </div>
+                                        </div>
+                                    </nav>
+                                </div>
+                            </li>
+                            <li class="header-nav-list-item">
+                                <a href="{% url 'purchase' %}" class="header-nav-link w-nav-link">Purchase</a>
+                            </li>
+                            <li class="header-nav-list-item">
+                                <a href="{% url 'customer' %}" class="header-nav-link w-nav-link">Customer</a>
+                            </li>
+                            <li class="header-nav-list-item">
+                                <a href="#" class="btn-secondary small w-button">Login</a>
+                            </li>
+                            <li class="header-nav-list-item show-in-tablet">
+                                <a href="#" class="btn-primary small w-button">Get started</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="hamburger-menu-wrapper w-nav-button">
+                        <div class="hamburger-menu-bar top"></div>
+                        <div class="hamburger-menu-bar bottom"></div>
+                    </div>
+                    <a href="#" class="btn-primary small header-btn-hidde-on-mb w-button">Get started</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% block content %}
+    {% endblock %}
+    <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=66042299f8679b3f134eaa55"
+        type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+        crossorigin="anonymous"></script>
+
+    <script src="{% static 'js/webflow.js' %}" type="text/javascript"></script>
+    <script src="{% static 'js/popHandler.js' %}" type="text/javascript"></script>
+</body>
+
+</html>
