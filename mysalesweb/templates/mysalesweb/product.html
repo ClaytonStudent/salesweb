@@ -34,7 +34,7 @@
                 <a href="{% url 'index' %}" aria-current="page" class="header-nav-link w-nav-link w--current">Home</a>
               </li>
               <li class="header-nav-list-item">
-                <a href="{% url 'product' %}" class="header-nav-link w-nav-link">Product</a>
+                <a href="{% url 'showproduct' %}" class="header-nav-link w-nav-link">Product</a>
               </li>
               <li class="header-nav-list-item">
                 <div data-hover="true" data-delay="0" data-w-id="e870c07e-1dde-3e44-661e-91801a3d3ac7"
@@ -146,24 +146,24 @@
                   <div class="table-row-nr">1</div>
                 </div>
                 <div class="table-box _2">
-                  {% if product.image %}
-                  <img src="{{ product.image.url }}" width="32" alt="" class="image-7">
+                  {% if product.product_infos.0.image %}
+                  <img src="{{ product.product_infos.0.image.url }}" width="32" alt="" class="image-7">
                   {% else %}
                   <p>No image</p>
                   {% endif %}
-                  <div class="table-data name">{{ product.name }} </div>
+                  <div class="table-data name">{{ product.product_name }} </div>
                 </div>
                 <div class="table-box _2">
-                  <a href="#" class="table-data link">{{ product.category }}</a>
+                  <a href="#" class="table-data link">{{ product.main_category }}</a>
                 </div>
                 <div class="table-box _2">
                   <div class="table-data">{{ product.barcodes }}</div>
                 </div>
                 <div class="table-box _2">
-                  <div class="table-data">{{ product.location }}</div>
+                  <div class="table-data">{{ product.product_infos.0.store_location }}</div>
                 </div>
                 <div class="table-box _2 small">
-                  <div class="table-data">{{ product.quantity }}</div>
+                  <div class="table-data">{{ product.product_infos.0.quantity }}</div>
                 </div>
                 <div class="table-box _2 action">
                   <a href="#" data-ix="toggle" data-w-id="fb925edc-a920-2bd7-9996-e52069308c63"

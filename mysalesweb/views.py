@@ -12,7 +12,7 @@ def index(request):
 def dashboard(request):
     return render(request, 'mysalesweb/dashboard.html')
 
-def product(request):
+def showproduct(request):
     products = product.Product.objects.all()
     return render(request, 'mysalesweb/product.html', {'products': products})
 
