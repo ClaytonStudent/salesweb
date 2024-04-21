@@ -1,6 +1,6 @@
 from django.db import models
 
-from product import Product
+from mysalesweb.Entities.product import Product
 
 
 class ProductInfo(models.Model):

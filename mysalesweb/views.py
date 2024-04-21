@@ -3,7 +3,7 @@ from django.views.generic import TemplateView
 from django.shortcuts import render, redirect
 
 from .forms import ProductAddForm
-from .models import Product
+from .Entities import product
 from django.contrib import messages
 
 def index(request):
@@ -13,7 +13,7 @@ def dashboard(request):
     return render(request, 'mysalesweb/dashboard.html')
 
 def product(request):
-    products = Product.objects.all()
+    products = product.Product.objects.all()
     return render(request, 'mysalesweb/product.html', {'products': products})
 
 def productAdd(request):

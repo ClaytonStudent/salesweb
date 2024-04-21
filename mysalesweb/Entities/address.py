@@ -1,7 +1,7 @@
 from django.db import models
 
-from customer import Customer
-from provider import Provider
+from mysalesweb.Entities.customer import Customer
+from mysalesweb.Entities.provider import Provider
 
 
 class Address(models.Model):
